@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анатолий Соколов](https://up.htmlacademy.ru/htmlcss/20/user/566939).
-* Наставник: [Алекс Шевляков] (https://up.htmlacademy.ru/htmlcss/20/user/217132).
+* Наставник: [Максим Нестеренко](https://up.htmlacademy.ru/htmlcss/20/user/48647).
 
 ---
 

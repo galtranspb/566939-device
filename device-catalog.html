@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 class="visually-hidden">Каталог таваров</h1>
+
+  <header>
+    <div class="logo-container"><a class="logo" href="index.html">Device</a></div>
+    <nav class="user-menu">
+      <form action="#" method="post">
+        <input type="search" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти">
+      </form>
+      <ul>
+        <li class="user-name"><a href="#">Валентин Петухов</a></li>
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="#">Каталог таваров</a>
+          <ul class="sub-menu">
+            <li>
+              <ul class="video-gadgets">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для слефи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="wrist-accessories">
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="quadcopters">
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h2>Моноподы для селфи</h2>
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог товаров</a></li>
+      <li class="breadcrumbs-current">Моноподы для селфи</li>
+    </ul>
+    <div class="column-filter">
+      <form action="#" method="post">
+        <div>
+          <h3>Фильтр:</h3>
+        </div>
+        <fieldset>
+          <legend>Стоимось:</legend>
+          <input id="pricecounter-field" type="range" min="500" max="10000" step="50">
+          <!--
+          пока не знаю как выбрать мин и макс значения
+          <label for="pricecounter-field">0</label>   
+          <label for="pricecounter-field">5000</label>  
+-->
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <input type="checkbox" id="color-field-black" name="color-black" checked>
+          <label for="color-field-black">Черный</label>
+          <input type="checkbox" id="color-field-white" name="color-white">
+          <label for="color-field-white">Белый</label>
+          <input type="checkbox" id="color-field-blue" name="color-blue" checked>
+          <label for="color-field-blue">Синий</label>
+          <input type="checkbox" id="color-field-red" name="color-red" checked>
+          <label for="color-field-red">Красный</label>
+          <input type="checkbox" id="color-field-pink" name="color-pink">
+          <label for="color-field-pink">Розовый</label>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <input id="go-a-bluetooth-field" name="got-a-bluetooth" type="radio" checked>
+          <input id="no-bluetooth-field" name="got-a-bluetooth" type="radio">
+          <label for="go-a-bluetooth-field">Есть</label>
+          <label for="no-bluetooth-field">Нет</label>
+        </fieldset>
+        <input class="btn" type="submit" value="Показать">
+      </form>
+    </div>
+    <div class="column-sort">
+      <div>
+        <h3>Сортировка:</h3>
+        <span class="sort-filter by-price">По цене</span>
+        <span class="sort-filter by-type">По типу</span>
+        <span class="sort-filter by-popularity">По популярности</span>
+        <span class="sort-filter ascending">По возрастанию</span>
+        <span class="sort-filter descending">По убыванию</span>
+      </div>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <h4>
+            <a href="catalog-item.html">
+              <!--             Зачем оборачивать в спан?-->
+              <span class="catalog-item-title">Любительская селфи палка</span>
+            </a>
+          </h4>
+          <span class="catalog-item-price">500 руб.</span>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="#" alt="item1" width="1" height="1">
+            </a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <h4>
+            <a href="catalog-item.html">
+              <span class="catalog-item-title">Любительская селфи палка</span>
+            </a>
+          </h4>
+          <span class="catalog-item-price">500 руб.</span>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="#" alt="item2" width="1" height="1">
+            </a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <h4>
+            <a href="catalog-item.html">
+              <span class="catalog-item-title">Любительская селфи палка</span>
+            </a>
+          </h4>
+          <span class="catalog-item-price">500 руб.</span>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="#" alt="item3" width="1" height="1">
+            </a>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <h4>
+            <a href="catalog-item.html">
+              <span class="catalog-item-title">Любительская селфи палка</span>
+            </a>
+          </h4>
+          <span class="catalog-item-price">500 руб.</span>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="#" alt="item4" width="1" height="1">
+            </a>
+          </p>
+        </li>
+      </ul>
+      <ul class="paginator-list">
+        <li class="paginator-item"><a href="#">Назад</a></li>
+        <li class="paginator-item paginator-item-current"><a>1</a></li>
+        <li class="paginator-item"><a href="#">2</a></li>
+        <li class="paginator-item"><a href="#">3</a></li>
+        <li class="paginator-item"><a href="#">Вперед</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="logo"><a href="#">Device</a></div>
+      <nav class="user-menu">
+        <ul>
+          <li class="user-name"><a href="#">Валентин Петухов</a></li>
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-middle">
+      <p class="adress content">г.Москва ул.Строителей, 15</p>
+      <nav class="footer-main-nav">
+        <ul>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="phone content">Тел:+7(495)495-95-95</p>
+    </div>
+    <div class="footer-bottom">
+      <div class="social">
+        <ul>
+          <li><a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/?lang=ru" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+      <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="#" alt="Интенсивный онлайн‑курс 
+Профессиональный HTML и CSS,
+уровень 1"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
