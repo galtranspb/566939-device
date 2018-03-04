@@ -11,15 +11,17 @@
 
 <body>
 
-  <h1 class="visually-hidden">Каталог таваров</h1>
-
   <header>
-    <div class="logo-container"><a class="logo" href="index.html">Device</a></div>
-    <nav class="user-menu">
+    <div class="logo-container">
+      <a class="logo" href="index.html">Device</a>
+    </div>
+    <div class="form-container">
       <form action="#" method="post">
         <input type="search" placeholder="Поиск по сайту">
         <input type="submit" value="Найти">
       </form>
+    </div>
+    <nav class="user-menu">
       <ul>
         <li class="user-name"><a href="#">Валентин Петухов</a></li>
         <li><a href="#">Войти</a></li>
@@ -34,7 +36,7 @@
             <li>
               <ul class="video-gadgets">
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для слефи</a></li>
+                <li><a>Моноподы для слефи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
               </ul>
             </li>
@@ -58,27 +60,24 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
-    <h2>Моноподы для селфи</h2>
+    <h1>Моноподы для селфи</h1>
     <ul class="breadcrumbs">
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Каталог товаров</a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
-    <div class="column-filter">
+    <section class="filter">
+      <h2>Фильтр:</h2>
       <form action="#" method="post">
-        <div>
-          <h3>Фильтр:</h3>
-        </div>
         <fieldset>
           <legend>Стоимось:</legend>
-          <input id="pricecounter-field" type="range" min="500" max="10000" step="50">
-          <!--
-          пока не знаю как выбрать мин и макс значения
-          <label for="pricecounter-field">0</label>   
-          <label for="pricecounter-field">5000</label>  
--->
+          <input id="pricecounter-field" type="range" min="500" max="10000" step="100">
+          <span class="content">от</span>
+          <span class="min-price">0</span>
+          <span class="content">до</span>
+          <span class="max-price">500</span>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -102,116 +101,146 @@
         </fieldset>
         <input class="btn" type="submit" value="Показать">
       </form>
-    </div>
-    <div class="column-sort">
+    </section>
+    <section class="catalog">
+      <h2>Сортировка:</h2>
+      <ul class="sort-filter">
+        <!--       с сортировкой разберусь чуть позже-->
+        <li>
+          <label for="sort-by-price"><input id="sort-by-price" type="checkbox" checked>По цене</label>
+        </li>
+        <li>
+          <label for="sort-by-type"><input id="sort-by-type" type="checkbox">По типу</label>
+        </li>
+        <li>
+          <label for="sort-by-popularity"><input id="sort-by-popularity" type="checkbox">По популярности</label>
+        </li>
+        <li>
+          <input id="sort-ascending" name="filter" type="radio">
+          <label for="sort-ascending">По возрастанию</label>
+        </li>
+        <li>
+          <input id="sort-descending" name="filter" type="radio">
+          <label for="sort-descending">По убыванию</label>
+        </li>
+      </ul>
+      <!--
       <div>
-        <h3>Сортировка:</h3>
         <span class="sort-filter by-price">По цене</span>
         <span class="sort-filter by-type">По типу</span>
         <span class="sort-filter by-popularity">По популярности</span>
         <span class="sort-filter ascending">По возрастанию</span>
         <span class="sort-filter descending">По убыванию</span>
-      </div>
+      </div>      
+-->
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h4>
-            <a href="catalog-item.html">
-              <!--             Зачем оборачивать в спан?-->
+          <h3>
+            <a href="catalog-item.html">              
               <span class="catalog-item-title">Любительская селфи палка</span>
             </a>
-          </h4>
+          </h3>
           <span class="catalog-item-price">500 руб.</span>
           <p class="catalog-item-image">
-            <a href="catalog-item.html">
-              <img src="#" alt="item1" width="1" height="1">
-            </a>
+            <img src="img/product-1.jpg" alt="item1" width="1" height="1">
           </p>
+          <p><a href="#" class="btn">В корзину</a></p>
+          <p><a href="#" class="product-comparison">Добавить к сравнению</a></p>
         </li>
         <li class="catalog-item">
-          <h4>
+          <h3>
             <a href="catalog-item.html">
               <span class="catalog-item-title">Любительская селфи палка</span>
             </a>
-          </h4>
+          </h3>
           <span class="catalog-item-price">500 руб.</span>
           <p class="catalog-item-image">
-            <a href="catalog-item.html">
-              <img src="#" alt="item2" width="1" height="1">
-            </a>
+            <img src="#" alt="item2" width="1" height="1">
           </p>
+          <p><a href="#" class="btn">В корзину</a></p>
+          <p><a href="#" class="product-comparison">Добавить к сравнению</a></p>
         </li>
         <li class="catalog-item">
-          <h4>
+          <h3>
             <a href="catalog-item.html">
               <span class="catalog-item-title">Любительская селфи палка</span>
             </a>
-          </h4>
+          </h3>
           <span class="catalog-item-price">500 руб.</span>
           <p class="catalog-item-image">
-            <a href="catalog-item.html">
-              <img src="#" alt="item3" width="1" height="1">
-            </a>
+            <img src="#" alt="item3" width="1" height="1">
           </p>
+          <p><a href="#" class="btn">В корзину</a></p>
+          <p><a href="#" class="product-comparison">Добавить к сравнению</a></p>
         </li>
         <li class="catalog-item">
-          <h4>
+          <h3>
             <a href="catalog-item.html">
               <span class="catalog-item-title">Любительская селфи палка</span>
             </a>
-          </h4>
+          </h3>
           <span class="catalog-item-price">500 руб.</span>
           <p class="catalog-item-image">
-            <a href="catalog-item.html">
-              <img src="#" alt="item4" width="1" height="1">
-            </a>
+            <img src="#" alt="item4" width="1" height="1">
           </p>
+          <p><a href="#" class="btn">В корзину</a></p>
+          <p><a href="#" class="product-comparison">Добавить к сравнению</a></p>
         </li>
       </ul>
-      <ul class="paginator-list">
+      <ul class="pagination-list">
         <li class="paginator-item"><a href="#">Назад</a></li>
         <li class="paginator-item paginator-item-current"><a>1</a></li>
         <li class="paginator-item"><a href="#">2</a></li>
         <li class="paginator-item"><a href="#">3</a></li>
         <li class="paginator-item"><a href="#">Вперед</a></li>
       </ul>
-    </div>
+    </section>
 
   </main>
 
   <footer>
     <div class="footer-top">
-      <div class="logo"><a href="#">Device</a></div>
-      <nav class="user-menu">
+      <div class="logo">
+        <a href="#">Device</a>
+      </div>
+      <div class="user-menu">
         <ul>
-          <li class="user-name"><a href="#">Валентин Петухов</a></li>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="user-name">
+            <a href="#">Валентин Петухов</a>
+          </li>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
     <div class="footer-middle">
       <p class="adress content">г.Москва ул.Строителей, 15</p>
-      <nav class="footer-main-nav">
+      <div class="footer-main-nav">
         <ul>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </nav>
+      </div>
       <p class="phone content">Тел:+7(495)495-95-95</p>
     </div>
     <div class="footer-bottom">
       <div class="social">
-        <ul>
+        <ul class="social-list">
           <li><a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a></li>
           <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
           <li><a href="https://twitter.com/?lang=ru" target="_blank">Twitter</a></li>
         </ul>
       </div>
-      <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="#" alt="Интенсивный онлайн‑курс 
-Профессиональный HTML и CSS,
-уровень 1"></a>
+      <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <img src="#" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS,уровень 1"></a>
     </div>
   </footer>
 

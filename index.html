@@ -9,20 +9,23 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-  <!-- Не нашёл шрифт в инете Gilroy extrabold -->
 </head>
 
 <body>
 
   <header class="main-header">
-    <div class="logo-container"><a class="logo">Device</a></div>
-    <nav class="user-menu">
+    <div class="logo-container">
+      <a class="logo">Device</a>
+    </div>
+    <!--    нужен здесь контейнер для формы?-->
+    <div class="form-container">
       <form action="#" method="post">
         <input type="search" placeholder="Поиск по сайту">
         <input type="submit" value="Найти">
       </form>
+    </div>
+    <nav class="user-menu">
       <ul>
-<!--       Как должна отображаться страница при регистрации на сайте? Просто добаляется имя пользователя?-->
         <li class="user-name"><a href="#">Валентин Петухов</a></li>
         <li><a href="#">Войти</a></li>
         <li><a href="#">Сравнить</a></li>
@@ -60,7 +63,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
     <h1 class="visually-hidden">Магазин Device</h1>
 
@@ -70,11 +73,8 @@
         <input id="promo-slide1" name="promo-slides" type="radio" checked>
         <input id="promo-slide2" name="promo-slides" type="radio">
         <input id="promo-slide3" name="promo-slides" type="radio">
-        <ul class="promo-list">
+        <ol class="promo-list">
           <li class="promo-page">
-            <div class="column">
-              <img src="#" alt="Гаджет-1">
-            </div>
             <div class="column">
               <h3 class="promo-page-title">01</h3>
               <b class="promo-text">Делай селфи, как Бен Стиллер!</b>
@@ -93,11 +93,11 @@
                 </tr>
               </table>
             </div>
+            <div class="column">
+              <img src="#" alt="Гаджет-1">
+            </div>
           </li>
           <li class="promo-page">
-            <div class="column">
-              <img src="#" alt="Гаджет-2">
-            </div>
             <div class="column">
               <h3 class="promo-page-title">02</h3>
               <b class="promo-text">Худеем правильно!</b>
@@ -116,11 +116,11 @@
                 </tr>
               </table>
             </div>
+            <div class="column">
+              <img src="#" alt="Гаджет-2">
+            </div>
           </li>
           <li class="promo-page">
-            <div class="column">
-              <img src="#" alt="Гаджет-3">
-            </div>
             <div class="column">
               <h3 class="promo-page-title">03</h3>
               <b class="promo-text">Порхает как бабочка, жалит как пчела!</b>
@@ -139,8 +139,11 @@
                 </tr>
               </table>
             </div>
+            <div class="column">
+              <img src="#" alt="Гаджет-3">
+            </div>
           </li>
-        </ul>
+        </ol>
       </div>
       <div class="promo-active">
         <label for="promo-slide1">Подпись-1</label>
@@ -197,6 +200,11 @@
         <input id="services-slide1" name="services-slides" type="radio" checked>
         <input id="services-slide2" name="services-slides" type="radio">
         <input id="services-slide3" name="services-slides" type="radio">
+        <div class="services-active">
+          <label for="services-slide1">Доставка</label>
+          <label for="services-slide2">Гарантия</label>
+          <label for="services-slide3">Кредит</label>
+        </div>
         <ul class="services-list">
           <li class="services-page">
             <h3>Доставка</h3>
@@ -211,11 +219,6 @@
             <p class="content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
-        <div class="services-active">
-          <label for="services-slide1">Доставка</label>
-          <label for="services-slide2">Гарантия</label>
-          <label for="services-slide3">Кредит</label>
-        </div>
       </div>
     </section>
 
