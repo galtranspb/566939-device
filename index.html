@@ -8,7 +8,6 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +16,7 @@
     <div class="logo-container">
       <a class="logo">Device</a>
     </div>
-    <!--    нужен здесь контейнер для формы?-->
+
     <div class="form-container">
       <form action="#" method="post">
         <input type="search" placeholder="Поиск по сайту">
@@ -26,10 +25,18 @@
     </div>
     <nav class="user-menu">
       <ul>
-        <li class="user-name"><a href="#">Валентин Петухов</a></li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="user-name">
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#">Войти</a>
+        </li>
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
       </ul>
     </nav>
     <nav class="main-menu">
@@ -38,27 +45,45 @@
           <ul class="sub-menu">
             <li>
               <ul class="video-gadgets">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для слефи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="monopods-for-selfi.html">Моноподы для слефи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
               </ul>
             </li>
             <li>
               <ul class="wrist-accessories">
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
               </ul>
             </li>
             <li>
               <ul class="quadcopters">
-                <li><a href="#">Квадрокоптеры</a></li>
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -74,9 +99,9 @@
         <input id="promo-slide2" name="promo-slides" type="radio">
         <input id="promo-slide3" name="promo-slides" type="radio">
         <ol class="promo-list">
-          <li class="promo-page">
+          <li class="promo-item">
             <div class="column">
-              <h3 class="promo-page-title">01</h3>
+              <p class="promo-page-title">01</p>
               <b class="promo-text">Делай селфи, как Бен Стиллер!</b>
               <p class="content">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="#" class="btn">Подробнее</a>
@@ -97,9 +122,9 @@
               <img src="#" alt="Гаджет-1">
             </div>
           </li>
-          <li class="promo-page">
+          <li class="promo-item">
             <div class="column">
-              <h3 class="promo-page-title">02</h3>
+              <p class="promo-page-title">02</p>
               <b class="promo-text">Худеем правильно!</b>
               <p class="content">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="btn">Подробнее</a>
@@ -120,9 +145,9 @@
               <img src="#" alt="Гаджет-2">
             </div>
           </li>
-          <li class="promo-page">
+          <li class="promo-item">
             <div class="column">
-              <h3 class="promo-page-title">03</h3>
+              <p class="promo-page-title">03</p>
               <b class="promo-text">Порхает как бабочка, жалит как пчела!</b>
               <p class="content">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a href="#" class="btn">Подробнее</a>
@@ -162,7 +187,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="monopods-for-selfi.html">
             <h3 class="popular-product-title">Моноподы для селфи</h3>
             <div class="popular-product-image"></div>
           </a>
@@ -206,15 +231,15 @@
           <label for="services-slide3">Кредит</label>
         </div>
         <ul class="services-list">
-          <li class="services-page">
+          <li class="services-item">
             <h3>Доставка</h3>
             <p class="content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="services-page">
+          <li class="services-item">
             <h3>Гарантия</h3>
             <p class="content">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
-          <li class="services-page">
+          <li class="services-item">
             <h3>Кредит</h3>
             <p class="content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
@@ -225,10 +250,18 @@
     <section class="our-partner">
       <h2 class="visually-hidden">Наши партнёры</h2>
       <ul class="our-partner-list">
-        <li><a href="#"><img src="#" alt="dji" width="1" height="1"></a></li>
-        <li><a href="#"><img src="#" alt="SP-Gadgets" width="1" height="1"></a></li>
-        <li><a href="#"><img src="#" alt="GoPro" width="1" height="1"></a></li>
-        <li><a href="#"><img src="#" alt="Vive" width="1" height="1"></a></li>
+        <li>
+          <a href="#"><img src="#" alt="dji" width="1" height="1"></a>
+        </li>
+        <li>
+          <a href="#"><img src="#" alt="SP-Gadgets" width="1" height="1"></a>
+        </li>
+        <li>
+          <a href="#"><img src="#" alt="GoPro" width="1" height="1"></a>
+        </li>
+        <li>
+          <a href="#"><img src="#" alt="Vive" width="1" height="1"></a>
+        </li>
       </ul>
     </section>
 
@@ -237,9 +270,14 @@
       <p class="content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. </p>
       <p class="content">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями: </p>
       <ul class="companies-working-with-us">
-        <li><b>Деловые линии</b></li>
-        <li><b>Автотрейдинг</b></li>
-        <li><b>ЖелДорЭкспидиция</b></li>
+        <li>
+          <b>Деловые линии</b>
+        </li>
+        <li>
+          <b>Автотрейдинг</b>
+        </li>
+        <li>
+          <b>ЖелДорЭкспидиция</b></li>
       </ul>
       <a href="#" class="btn">Подробнее о нас</a>
     </section>
@@ -277,13 +315,23 @@
 
   <footer>
     <div class="footer-top">
-      <div class="logo"><a href="#">Device</a></div>
+      <div class="logo">
+        <a href="#">Device</a>
+      </div>
       <nav class="user-menu">
         <ul>
-          <li class="user-name"><a href="#">Валентин Петухов</a></li>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="user-name">
+            <a href="#">Валентин Петухов</a>
+          </li>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -291,24 +339,32 @@
       <p class="adress content">г.Москва ул.Строителей, 15</p>
       <nav class="footer-main-nav">
         <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <p class="phone content">Тел:+7(495)495-95-95</p>
     </div>
     <div class="footer-bottom">
-      <div class="social">
-        <ul>
-          <li><a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-          <li><a href="https://twitter.com/?lang=ru" target="_blank">Twitter</a></li>
-        </ul>
-      </div>
-      <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="#" alt="Интенсивный онлайн‑курс 
-Профессиональный HTML и CSS,
-уровень 1"></a>
+      <ul class="social-list">
+        <li>
+          <a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=ru" target="_blank">Twitter</a>
+        </li>
+      </ul>
+      <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <img src="#" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+      </a>
     </div>
   </footer>
 
