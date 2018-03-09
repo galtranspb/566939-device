@@ -15,70 +15,72 @@
       <a class="logo" href="index.html">Device</a>
     </div>
     <div class="form-container">
-      <form action="#" method="post">
-        <input type="search" placeholder="Поиск по сайту">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <input id="seacrh-field" name="search" type="search" placeholder="Поиск по сайту">
+        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
         <input type="submit" value="Найти">
       </form>
     </div>
     <nav class="user-menu">
-      <ul>
-        <li class="user-name">
+      <ul class="user-menu-list">
+        <li class="user-enter user-menu-item">
           <a href="#">Валентин Петухов</a>
         </li>
-        <li>
+        <li class="user-exit user-menu-item">
           <a href="#">Выйти</a>
         </li>
-        <li>
+        <li class="user-menu-item">
           <a href="#">Сравнить</a>
         </li>
-        <li>
+        <li class="user-menu-item">
           <a href="#">Корзина</a>
         </li>
       </ul>
     </nav>
     <nav class="main-menu">
-      <ul>
-        <li><a href="#">Каталог таваров</a>
-          <ul class="sub-menu">
-            <li>
-              <ul class="video-gadgets">
-                <li>
+      <ul class="main-menu-list">
+        <li class="main-menu-item">
+          <a href="#">Каталог таваров</a>
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item">
+              <ul class="video-gadgets-list">
+                <li class="video-gadgets-item">
                   <a href="#">Виртуальная реальность</a>
                 </li>
-                <li>
+                <li class="video-gadgets-item">
                   <a>Моноподы для слефи</a>
                 </li>
-                <li>
+                <li class="video-gadgets-item">
                   <a href="#">Экшн-камеры</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <ul class="wrist-accessories">
-                <li>
+            <li class="sub-menu-item">
+              <ul class="wrist-accessories-list">
+                <li class="wrist-accessories-item">
                   <a href="#">Фитнес-браслеты</a>
                 </li>
-                <li>
+                <li class="wrist-accessories-item">
                   <a href="#">Умные часы</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <ul class="quadcopters">
-                <li>
+            <li class="sub-menu-item">
+              <ul class="quadcopters-list">
+                <li class="quadcopters-item">
                   <a href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="#">Доставка</a>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="#">Гарантия</a>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="#">Контакты</a>
         </li>
       </ul>
@@ -88,24 +90,24 @@
   <main class="container">
 
     <h1>Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
-      <li>
+    <ul class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
         <a href="index.html">Главная</a>
       </li>
-      <li>
+      <li class="breadcrumbs-item">
         <a href="catalog.html">Каталог товаров</a>
       </li>
-      <li class="breadcrumbs-current">
+      <li class="breadcrumbs-item breadcrumbs-current">
         Моноподы для селфи
       </li>
     </ul>
 
     <section class="filter">
       <h2>Фильтр:</h2>
-      <form action="#" method="post">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Стоимось:</legend>
-          <input id="pricecounter-field" type="range" min="500" max="10000" step="100">
+          <input id="pricecounter-field" name="pricecounter" type="range" min="500" max="10000" step="100">
           <p>
             <span class="content">от</span>
             <span class="min-price">0</span>
@@ -158,19 +160,19 @@
     <section class="catalog">
       <h2>Сортировка:</h2>
       <ul class="sort-list">
-        <li>
+        <li class="sort-item">
           <a class="sort-filter by-pice" href="#">По цене</a>
         </li>
-        <li>
+        <li class="sort-item">
           <a class="sort-filter by-type" href="#">По типу</a>
         </li>
-        <li>
+        <li class="sort-item">
           <a class="sort-filter by-popularity" href="#">По популярности</a>
         </li>
-        <li>
+        <li class="sort-item">
           <a class="sort-filter ascending" href="#">По возрастанию</a>
         </li>
-        <li>
+        <li class="sort-item">
           <a class="sort-filter descending" href="#">По убыванию</a>
         </li>
       </ul>
@@ -275,17 +277,17 @@
         <a href="#">Device</a>
       </div>
       <div class="user-menu">
-        <ul>
-          <li class="user-name">
+        <ul class="user-menu-list">
+          <li class="user-enter user-menu-item">
             <a href="#">Валентин Петухов</a>
           </li>
-          <li>
-            <a href="#">Войти</a>
+          <li class="user-exit user-menu-item">
+            <a href="#">Выйти</a>
           </li>
-          <li>
+          <li class="userm-menu-item">
             <a href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="userm-menu-item">
             <a href="#">Корзина</a>
           </li>
         </ul>
@@ -293,15 +295,15 @@
     </div>
     <div class="footer-middle">
       <p class="adress content">г.Москва ул.Строителей, 15</p>
-      <div class="footer-main-nav">
-        <ul>
-          <li>
+      <div class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="main-menu-item">
             <a href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="main-menu-item">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -310,13 +312,13 @@
     </div>
     <div class="footer-bottom">
       <ul class="social-list">
-        <li>
+        <li class="social-item">
           <a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
         </li>
-        <li>
+        <li class="social-item">
           <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         </li>
-        <li>
+        <li class="social-item">
           <a href="https://twitter.com/?lang=ru" target="_blank">Twitter</a>
         </li>
       </ul>

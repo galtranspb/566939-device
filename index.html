@@ -16,72 +16,73 @@
     <div class="logo-container">
       <a class="logo">Device</a>
     </div>
-
     <div class="form-container">
-      <form action="#" method="post">
-        <input type="search" placeholder="Поиск по сайту">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <input id="search-field" name="search" type="search" placeholder="Поиск по сайту">
+        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
         <input type="submit" value="Найти">
       </form>
     </div>
     <nav class="user-menu">
-      <ul>
-        <li class="user-name">
-          <a href="#"></a>
+      <ul class="user-menu-list">
+        <li class="user-enter user-menu-item">
+          <a href="#">Валентин Петухов</a>
         </li>
-        <li>
-          <a href="#">Войти</a>
+        <li class="user-exit user-menu-item">
+          <a href="#">Выйти</a>
         </li>
-        <li>
+        <li class="user-menu-item">
           <a href="#">Сравнить</a>
         </li>
-        <li>
+        <li class="user-menu-item">
           <a href="#">Корзина</a>
         </li>
       </ul>
     </nav>
     <nav class="main-menu">
-      <ul>
-        <li><a href="#">Каталог таваров</a>
-          <ul class="sub-menu">
-            <li>
-              <ul class="video-gadgets">
-                <li>
+      <ul class="main-menu-list">
+        <li class="main-menu-item">
+          <a href="#">Каталог таваров</a>
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item">
+              <ul class="video-gadgets-list">
+                <li class="video-gadgets-item">
                   <a href="#">Виртуальная реальность</a>
                 </li>
-                <li>
+                <li class="video-gadgets-item">
                   <a href="monopods-for-selfi.html">Моноподы для слефи</a>
                 </li>
-                <li>
+                <li class="video-gadgets-item">
                   <a href="#">Экшн-камеры</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <ul class="wrist-accessories">
-                <li>
+            <li class="sub-menu-item">
+              <ul class="wrist-accessories-list">
+                <li class="wrist-accessories-item">
                   <a href="#">Фитнес-браслеты</a>
                 </li>
-                <li>
+                <li class="wrist-accessories-item">
                   <a href="#">Умные часы</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <ul class="quadcopters">
-                <li>
+            <li class="sub-menu-item">
+              <ul class="quadcopters-list">
+                <li class="quadcopters-item">
                   <a href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="#">Доставка</a>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="#">Гарантия</a>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="#">Контакты</a>
         </li>
       </ul>
@@ -171,9 +172,9 @@
         </ol>
       </div>
       <div class="promo-active">
-        <label for="promo-slide1">Подпись-1</label>
-        <label for="promo-slide2">Подпись-2</label>
-        <label for="promo-slide3">Подпись-3</label>
+        <label for="promo-slide1">Слайдер-1</label>
+        <label for="promo-slide2">Слайдер-2</label>
+        <label for="promo-slide3">Слайдер-3</label>
       </div>
     </section>
 
@@ -250,22 +251,22 @@
     <section class="our-partner">
       <h2 class="visually-hidden">Наши партнёры</h2>
       <ul class="our-partner-list">
-        <li>
+        <li class="our-partner-item">
           <a href="#">
             <img src="img/logo-partner-1.png" width="260" height="100" alt="Компания dji">
           </a>
         </li>
-        <li>
+        <li class="our-partner-item">
           <a href="#">
             <img src="img/logo-partner-2.png" width="260" height="100" alt="Компания SP-Gadgets">
           </a>
         </li>
-        <li>
+        <li class="our-partner-item">
           <a href="#">
             <img src="img/logo-partner-3.png" width="260" height="100" alt="Компания GoPro">
           </a>
         </li>
-        <li>
+        <li class="our-partner-item">
           <a href="#">
             <img src="img/logo-partner-4.png" width="260" height="100" alt="Компания Vive">
           </a>
@@ -277,14 +278,14 @@
       <h2 class="section-title">О нас</h2>
       <p class="content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. </p>
       <p class="content">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями: </p>
-      <ul class="companies-working-with-us">
-        <li>
+      <ul class="companies-working-with-us-list">
+        <li class="companies-working-with-us-item">
           <b>Деловые линии</b>
         </li>
-        <li>
+        <li class="companies-working-with-us-item">
           <b>Автотрейдинг</b>
         </li>
-        <li>
+        <li class="companies-working-with-us-item">
           <b>ЖелДорЭкспидиция</b></li>
       </ul>
       <a href="#" class="btn">Подробнее о нас</a>
@@ -294,7 +295,7 @@
       <h2>Контакты</h2>
       <p class="content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <div class="map-container">
-        <img src="img/map.jpg" width="560" height="222" alt="Улица Строителей, 15">
+        <img src="img/map.jpg" width="560" height="222" alt="Адрес нашей компании: Москва, улица Строителей, 15">
       </div>
       <a href="#" class="btn">Напишите нам</a>
     </section>
@@ -302,8 +303,8 @@
     <!--    popup к секции services-->
     <section class="modal-write-us">
       <h2 class="visually-hidden">Свяжитесь с нами</h2>
-      <span class="modal-close">x</span>
-      <form action="#" method="post">
+      <button class="modal-close" type="button">Закрыть окно</button>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <input id="fullname-field" name="fullname" type="text" placeholder="Имя Фамилия">
         <label for="fullname-field">Ваше имя:</label>
         <input id="email-field" name="email" type="text" placeholder="email@example.com">
@@ -316,12 +317,13 @@
 
     <!--    popup к секции contacts-->
     <section class="modal-map">
-      <h2 class="visually-hidden">Карта</h2>
-      <span class="modal-close">x</span>
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <button class="modal-close" type="button">Закрыть окно</button>
       <div class="map"></div>
     </section>
 
   </main>
+
 
   <footer>
     <div class="footer-top">
@@ -329,33 +331,33 @@
         <a href="#">Device</a>
       </div>
       <nav class="user-menu">
-        <ul>
-          <li class="user-name">
+        <ul class="user-menu-list">
+          <li class="user-enter user-menu-item">
             <a href="#">Валентин Петухов</a>
           </li>
-          <li>
-            <a href="#">Войти</a>
+          <li class="user-exit user-menu-item">
+            <a href="#">Выйти</a>
           </li>
-          <li>
+          <li class="user-menu-item">
             <a href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="user-menu-item">
             <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="footer-middle">
-      <p class="adress content">г.Москва ул.Строителей, 15</p>
-      <nav class="footer-main-nav">
-        <ul>
-          <li>
+      <p class="address content">г.Москва ул.Строителей, 15</p>
+      <nav class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="main-menu-item">
             <a href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="main-menu-item">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -364,13 +366,13 @@
     </div>
     <div class="footer-bottom">
       <ul class="social-list">
-        <li>
+        <li class="social-item">
           <a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
         </li>
-        <li>
+        <li class="social-item">
           <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         </li>
-        <li>
+        <li class="social-item">
           <a href="https://twitter.com/?lang=ru" target="_blank">Twitter</a>
         </li>
       </ul>
@@ -379,6 +381,7 @@
       </a>
     </div>
   </footer>
+
 
   <script src="js/main.js"></script>
 
