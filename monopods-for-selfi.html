@@ -16,12 +16,12 @@
     </div>
     <div class="form-container">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <input id="seacrh-field" name="search" type="search" placeholder="Поиск по сайту">
         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-        <input type="submit" value="Найти">
+        <input id="search-field" name="search" type="search" placeholder="Поиск по сайту">
+        <button class="btn-search" type="submit">Найти</button>
       </form>
     </div>
-    <nav class="user-menu">
+    <nav class="user-menu" aria-label="Меню пользователя">
       <ul class="user-menu-list">
         <li class="user-enter user-menu-item">
           <a href="#">Валентин Петухов</a>
@@ -37,17 +37,17 @@
         </li>
       </ul>
     </nav>
-    <nav class="main-menu">
+    <nav class="main-menu" aria-label="Главное меню">
       <ul class="main-menu-list">
-        <li class="main-menu-item">
+        <li class="main-menu-item" aria-haspopup="true">
           <a href="#">Каталог таваров</a>
-          <ul class="sub-menu-list">
+          <ul class="sub-menu-list" aria-label="Разделы каталога">
             <li class="sub-menu-item">
-              <ul class="video-gadgets-list">
+              <ul class="video-gadgets-list" aria-label="Видео гаджеты">
                 <li class="video-gadgets-item">
                   <a href="#">Виртуальная реальность</a>
                 </li>
-                <li class="video-gadgets-item">
+                <li class="video-gadgets-item" aria-current="page">
                   <a>Моноподы для слефи</a>
                 </li>
                 <li class="video-gadgets-item">
@@ -56,7 +56,7 @@
               </ul>
             </li>
             <li class="sub-menu-item">
-              <ul class="wrist-accessories-list">
+              <ul class="wrist-accessories-list" aria-label="Наручные аксессуары">
                 <li class="wrist-accessories-item">
                   <a href="#">Фитнес-браслеты</a>
                 </li>
@@ -66,7 +66,7 @@
               </ul>
             </li>
             <li class="sub-menu-item">
-              <ul class="quadcopters-list">
+              <ul class="quadcopters-list" aria-label="Квадрокоптеры">
                 <li class="quadcopters-item">
                   <a href="#">Квадрокоптеры</a>
                 </li>
@@ -90,23 +90,24 @@
   <main class="container">
 
     <h1>Моноподы для селфи</h1>
-    <ul class="breadcrumbs-list">
+    <ul class="breadcrumbs-list" aria-label="Навигационная цепочка">
       <li class="breadcrumbs-item">
         <a href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs-item">
         <a href="catalog.html">Каталог товаров</a>
       </li>
-      <li class="breadcrumbs-item breadcrumbs-current">
-        Моноподы для селфи
+      <li class="breadcrumbs-item breadcrumbs-current" aria-current="page">
+        <span>Моноподы для селфи</span>
       </li>
     </ul>
 
     <section class="filter">
       <h2>Фильтр:</h2>
-      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимось:</legend>
+          <label class="visually-hidden" for="pricecounter-field">Выберите минемальное и максимальное значение цены</label>
           <input id="pricecounter-field" name="pricecounter" type="range" min="500" max="10000" step="100">
           <p>
             <span class="content">от</span>
@@ -117,66 +118,68 @@
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
-          <ul class="color-filter-list">
+          <ul class="color-filter-list" aria-label="Выберите цвет товара">
             <li class="color-filter-item">
-              <input type="checkbox" id="color-field-black" name="color-black" checked>
+              <input class="visually-hidden" id="color-field-black" name="color-black" type="checkbox" checked>
               <label for="color-field-black">Черный</label>
             </li>
             <li class="color-filter-item">
-              <input type="checkbox" id="color-field-white" name="color-white">
+              <input class="visually-hidden" id="color-field-white" name="color-white" type="checkbox">
               <label for="color-field-white">Белый</label>
             </li>
             <li class="color-filter-item">
-              <input type="checkbox" id="color-field-blue" name="color-blue" checked>
+              <input class="visually-hidden" id="color-field-blue" name="color-blue" type="checkbox" checked>
               <label for="color-field-blue">Синий</label>
             </li>
             <li class="color-filter-item">
-              <input type="checkbox" id="color-field-red" name="color-red" checked>
+              <input class="visually-hidden" id="color-field-red" name="color-red" type="checkbox" checked>
               <label for="color-field-red">Красный</label>
             </li>
             <li class="color-filter-item">
-              <input type="checkbox" id="color-field-pink" name="color-pink">
+              <input class="visually-hidden" id="color-field-pink" name="color-pink" type="checkbox">
               <label for="color-field-pink">Розовый</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Bluetooth</legend>
-          <ul class="bluetooth-filter-list">
+          <ul class="bluetooth-filter-list" aria-label="Наличие блютуза">
             <li class="bluetooth-item">
-              <input id="got-a-bluetooth-field" name="got-a-bluetooth" type="radio" checked>
+              <input class="visually-hidden" id="got-a-bluetooth-field" name="got-a-bluetooth" type="radio" checked>
               <label for="got-a-bluetooth-field">Есть</label>
             </li>
             <li class="bluetooth-item">
-              <input id="no-bluetooth-field" name="got-a-bluetooth" type="radio">
+              <input class="visually-hidden" id="no-bluetooth-field" name="got-a-bluetooth" type="radio">
               <label for="no-bluetooth-field">Нет</label>
             </li>
           </ul>
         </fieldset>
-        <input class="btn" type="submit" value="Показать">
+        <button class="btn" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="catalog">
       <h2>Сортировка:</h2>
-      <ul class="sort-list">
-        <li class="sort-item">
-          <a class="sort-filter by-pice" href="#">По цене</a>
+      <ul class="sort-type-list" aria-label="Выберите тип сортировки: по цене, по типу, по популярности">
+        <li class="sort-type-item">
+          <a class="sort-type-filter by-pice" href="#">По цене</a>
         </li>
-        <li class="sort-item">
-          <a class="sort-filter by-type" href="#">По типу</a>
+        <li class="sort-type-item">
+          <a class="sort-type-filter by-type" href="#">По типу</a>
         </li>
-        <li class="sort-item">
-          <a class="sort-filter by-popularity" href="#">По популярности</a>
-        </li>
-        <li class="sort-item">
-          <a class="sort-filter ascending" href="#">По возрастанию</a>
-        </li>
-        <li class="sort-item">
-          <a class="sort-filter descending" href="#">По убыванию</a>
+        <li class="sort-type-item">
+          <a class="sort-type-filter by-popularity" href="#">По популярности</a>
         </li>
       </ul>
-      <ul class="catalog-list">
+      <ul class="sort-list" aria-label="Сортировка товаров по выбранным фильтрам">
+        <li class="sort-item">
+          <a class="sort ascending" href="#">По возрастанию</a>
+        </li>
+        <li class="sort-item">
+          <a class="sort descending" href="#">По убыванию</a>
+        </li>
+      </ul>
+      <ul class="catalog-list" aria-label="Каталог товаров">
         <li class="catalog-item">
           <h3>
             <a href="catalog-item.html">              
@@ -250,11 +253,11 @@
           <span class="mark-new">New</span>
         </li>
       </ul>
-      <ul class="pagination-list">
+      <ul class="pagination-list" aria-label="Меню постраницной навигации">
         <li class="paginator-item">
           <a href="#">Назад</a>
         </li>
-        <li class="paginator-item paginator-item-current">
+        <li class="paginator-item paginator-item-current" aria-current="page">
           <a>1</a>
         </li>
         <li class="paginator-item">
@@ -273,11 +276,11 @@
 
   <footer>
     <div class="footer-top">
-      <div class="logo">
-        <a href="#">Device</a>
+      <div class="logo-container">
+        <a class="logo" href="#">Device</a>
       </div>
       <div class="user-menu">
-        <ul class="user-menu-list">
+        <ul class="user-menu-list" aria-label="Меню пользователя в футере">
           <li class="user-enter user-menu-item">
             <a href="#">Валентин Петухов</a>
           </li>
@@ -296,7 +299,7 @@
     <div class="footer-middle">
       <p class="adress content">г.Москва ул.Строителей, 15</p>
       <div class="main-menu">
-        <ul class="main-menu-list">
+        <ul class="main-menu-list" aria-label="Главное меню в футере">
           <li class="main-menu-item">
             <a href="#">Доставка</a>
           </li>
@@ -311,7 +314,7 @@
       <p class="phone content">Тел:+7(495)495-95-95</p>
     </div>
     <div class="footer-bottom">
-      <ul class="social-list">
+      <ul class="social-list" aria-label="Список социальных сетей">
         <li class="social-item">
           <a href="https://ru-ru.facebook.com/" target="_blank">Facebook</a>
         </li>
