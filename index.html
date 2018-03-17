@@ -13,12 +13,16 @@
 <body>
 
   <header class="main-header">
+
     <div class="container">
       <div class="header-container">
+
         <p class="logo-container">
           <a class="logo">Device</a>
         </p>
+
         <div class="header-wrapper">
+
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="search-field">Поиск по сайту</label>
             <input id="search-field" name="search" type="search" placeholder="Поиск по сайту">
@@ -40,7 +44,9 @@
               </li>
             </ul>
           </nav>
+
         </div>
+
         <nav aria-label="Главное меню">
           <ul class="main-menu-list">
             <li class="main-menu-item" aria-haspopup="true">
@@ -79,22 +85,23 @@
               </ul>
             </li>
             <li class="main-menu-item">
-              <a class="link" href="#">Доставка</a>
+              <a class="link" href="#services-section">Доставка</a>
             </li>
             <li class="main-menu-item">
-              <a class="link" href="#">Гарантия</a>
+              <a class="link" href="#services-section">Гарантия</a>
             </li>
             <li class="main-menu-item">
-              <a class="link" href="#">Контакты</a>
+              <a class="link" href="#contacts-section">Контакты</a>
             </li>
           </ul>
         </nav>
 
       </div>
     </div>
+
   </header>
 
-  <main class="">
+  <main class="index">
 
     <h1 class="visually-hidden">Магазин Device</h1>
 
@@ -109,7 +116,10 @@
           <input class="visually-hidden" id="promo-slide3" name="promo-slides" type="radio">
           <ol class="promo-list">
             <li class="promo-item">
-              <div class="column">
+              <div class="promo-column">
+                <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи длиной 8 метров: &#8220;Делай селфи как Бен Стилер!&#8221;">
+              </div>
+              <div class="promo-column">
                 <p class="promo-item-title">01</p>
                 <p class="section-title">Делай селфи,<br>как Бен Стиллер!</p>
                 <p class="content">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -127,12 +137,12 @@
                   </tr>
                 </table>
               </div>
-              <div class="column">
-                <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи длиной 8 метров: &#8220;Делай селфи как Бен Стилер!&#8221;">
-              </div>
             </li>
             <li class="promo-item">
-              <div class="column">
+              <div class="promo-column">
+                <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет: &#8220;Я вижу, сто ты снова ешь&#8221;">
+              </div>
+              <div class="promo-column">
                 <p class="promo-item-title">02</p>
                 <p class="section-title">Худеем<br>правильно!</p>
                 <p class="content">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -150,12 +160,12 @@
                   </tr>
                 </table>
               </div>
-              <div class="column">
-                <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет: &#8220;Я вижу, сто ты снова ешь&#8221;">
-              </div>
             </li>
             <li class="promo-item">
-              <div class="column">
+              <div class="promo-column">
+                <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер: &#8220;Порхает как бабочка, жалит как пчела!&#8221;">
+              </div>
+              <div class="promo-column">
                 <p class="promo-item-title">03</p>
                 <p class="section-title">Порхает как бабочка,<br>жалит как пчела!</p>
                 <p class="content">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -172,9 +182,6 @@
                     <td></td>
                   </tr>
                 </table>
-              </div>
-              <div class="column">
-                <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер: &#8220;Порхает как бабочка, жалит как пчела!&#8221;">
               </div>
             </li>
           </ol>
@@ -238,7 +245,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services-section">
 
       <div class="container">
 
@@ -323,7 +330,7 @@
         <a href="#" class="link btn">Подробнее о нас</a>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts-section">
         <h2 class="section-title">Контакты</h2>
         <p class="content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map-container">
@@ -335,40 +342,42 @@
     </div>
 
     <!--    popup к секции services-->
-    <section class="modal-write-us"> 
-        <h2 class="visually-hidden">Свяжитесь с нами</h2>        
-        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="fullname-field">Ваше имя:</label><br>
-            <input id="fullname-field" name="fullname" type="text" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="email-field">Ваш e-mail:</label><br>
-            <input id="email-field" name="email" type="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="comment-field">Текст письма:</label><br>
-            <textarea id="comment-field" name="comment" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="link btn" type="submit">Отправить</button>
-        </form>        
-        <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>    
+    <section class="modal-write-us">
+      <h2 class="visually-hidden">Свяжитесь с нами</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="fullname-field">Ваше имя:</label><br>
+          <input id="fullname-field" name="fullname" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-field">Ваш e-mail:</label><br>
+          <input id="email-field" name="email" type="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="comment-field">Текст письма:</label><br>
+          <textarea id="comment-field" name="comment" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="link btn" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>
     </section>
-  
+
     <!--    popup к секции contacts-->
     <section class="modal-map">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="map">
-          <img src="img/map-big.jpg" width="960" height="559" alt="Адрес нашей компании: Москва, улица Строителей, 15">
-        </div>
-        <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>      
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="map">
+        <img src="img/map-big.jpg" width="960" height="559" alt="Адрес нашей компании: Москва, улица Строителей, 15">
+      </div>
+      <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>
     </section>
 
   </main>
 
 
   <footer class="main-footer">
+
     <div class="container">
+
       <div class="footer-top">
         <p class="logo-container">
           <a class="logo">Device</a>
@@ -395,13 +404,13 @@
         <div class="main-menu">
           <ul class="main-menu-list" aria-label="Главное меню в футере">
             <li class="main-menu-item">
-              <a class="link" href="#">Доставка</a>
+              <a class="link" href="#services-section">Доставка</a>
             </li>
             <li class="main-menu-item">
-              <a class="link" href="#">Гарантия</a>
+              <a class="link" href="#services-section">Гарантия</a>
             </li>
             <li class="main-menu-item">
-              <a class="link" href="#">Контакты</a>
+              <a class="link" href="#contacts-section">Контакты</a>
             </li>
           </ul>
         </div>
@@ -422,9 +431,11 @@
         <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-html.svg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
 <!--          псевдоэдемент?-->
-      </a>
+        </a>
       </div>
+
     </div>
+
   </footer>
 
 
