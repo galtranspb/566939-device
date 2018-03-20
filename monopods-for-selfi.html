@@ -15,9 +15,7 @@
     <div class="container">
       <div class="header-container">
 
-        <p class="logo-container">
-          <a class="logo" href="index.html">Device</a>
-        </p>
+        <a class="logo" href="index.html">Device</a>
 
         <div class="header-wrapper">
 
@@ -125,9 +123,9 @@
             <input id="pricecounter-field" name="pricecounter" type="range" min="500" max="10000" step="100">
             <p>
               <label for="minprice-field">от</label>
-              <input class="price" id="minprice-field" name="price" type="text" placeholder="0" pattern="[0-9]{,5}">              
+              <input class="price" id="minprice-field" name="price" type="text" placeholder="0" pattern="[0-9]{,5}">
               <label for="maxprice-field">до</label>
-              <input class="price" id="maxprice-field" name="price" type="text" placeholder="5000" pattern="[0-9]{,5}">              
+              <input class="price" id="maxprice-field" name="price" type="text" placeholder="5000" pattern="[0-9]{,5}">
             </p>
           </fieldset>
           <fieldset>
@@ -173,103 +171,80 @@
       </section>
 
       <section class="catalog">
-        <h2 class="catalog-title">Сортировка:</h2>
+        <h2 class="visually-hidden">Товары раздела Моноподы для селфи</h2>
+        <p class="catalog-title">Сортировка:</p>
         <ul class="sort-type-list" aria-label="Выберите тип сортировки: по цене, по типу, по популярности">
           <li class="sort-type-item">
-            <a class="sort-type-filter by-pice" href="#">По цене</a>
+            <a class="sort-type by-pice" href="#">По цене</a>
           </li>
           <li class="sort-type-item">
-            <a class="sort-type-filter by-type" href="#">По типу</a>
+            <a class="sort-type by-type" href="#">По типу</a>
           </li>
           <li class="sort-type-item">
-            <a class="sort-type-filter by-popularity" href="#">По популярности</a>
+            <a class="sort-type by-popularity" href="#">По популярности</a>
           </li>
         </ul>
         <ul class="sort-list" aria-label="Сортировка товаров по выбранным фильтрам">
           <li class="sort-item">
-            <a class="sort ascending" href="#">По возрастанию</a>
+            <a class="sort-icon ascending" href="#">По возрастанию</a>
           </li>
           <li class="sort-item">
-            <a class="sort descending" href="#">По убыванию</a>
+            <a class="sort-icon descending" href="#">По убыванию</a>
           </li>
         </ul>
         <ul class="catalog-list" aria-label="Каталог товаров">
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">              
-              <span class="catalog-item-title">Любительская селфи палка</span>
-            </a>
+            <h3 class="catalog-item-title"> 
+              <a class="link" href="catalog-item.html">Любительская селфи палка</a>
             </h3>
             <span class="catalog-item-price">500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             </p>
-            <p>
-              <a class="btn" href="#">В корзину</a>
-            </p>
-            <p>
-              <a href="#" class="product-comparison">Добавить к сравнению</a>
-            </p>
+            <a class="into-the-backet link btn" href="#">В корзину</a>
+            <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>
             <span class="mark-new">New</span>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-              <span class="catalog-item-title">Профессиональная селфи-палка</span>
-            </a>
+            <h3 class="catalog-item-title"> 
+              <a class="link" href="catalog-item.html">Профессиональная селфи-палка</a>
             </h3>
             <span class="catalog-item-price">500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            </p>
-            <p>
-              <a class="btn" href="#">В корзину</a>
-            </p>
-            <p>
-              <a href="#" class="product-comparison">Добавить к сравнению</a>
-            </p>
+            </p>          
+              <a class="into-the-backet link btn" href="#">В корзину</a>            
+              <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>            
             <span class="mark-new">New</span>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-              <span class="catalog-item-title">Непотопляемая селфи-палка</span>
-            </a>
+            <h3 class="catalog-item-title"> 
+              <a class="link" href="catalog-item.html">Непотопляемая селфи-палка</a>
             </h3>
             <span class="catalog-item-price">500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            </p>
-            <p>
-              <a class="btn" href="#">В корзину</a>
-            </p>
-            <p>
-              <a href="#" class="product-comparison">Добавить к сравнению</a>
-            </p>
+            </p>            
+              <a class="into-the-backet link btn" href="#">В корзину</a>            
+              <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>            
             <span class="mark-new">New</span>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-              <span class="catalog-item-title">Селфи-палка &#8220;Следуй за мной&#8221;</span>
-            </a>
+            <h3 class="catalog-item-title"> 
+              <a class="link" href="catalog-item.html">Селфи-палка &#8220;Следуй за мной&#8221;</a>
             </h3>
             <span class="catalog-item-price">500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &#8220;Следуй за мной&#8221;">
-            </p>
-            <p>
-              <a class="btn" href="#">В корзину</a>
-            </p>
-            <p>
-              <a href="#" class="product-comparison">Добавить к сравнению</a>
-            </p>
+            </p>            
+              <a class="into-the-backet link btn" href="#">В корзину</a>            
+              <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>            
             <span class="mark-new">New</span>
           </li>
         </ul>
-        <ul class="pagination-list" aria-label="Меню постраницной навигации">
+        <ul class="pagination-list" aria-label="Меню постраничной навигации">
           <li class="paginator-item">
-            <a class="link-paginator" href="#">Назад</a>
+            <a class="link-paginator">Назад</a>
           </li>
           <li class="paginator-item paginator-item-current" aria-current="page">
             <a class="link-paginator">1</a>
@@ -295,9 +270,7 @@
     <div class="container">
 
       <div class="footer-top">
-        <p class="logo-container">
-          <a class="logo" href="index.html">Device</a>
-        </p>
+        <a class="logo" href="index.html">Device</a>
         <div class="user-menu">
           <ul class="user-menu-list" aria-label="Меню пользователя в футере">
             <li class="user-enter user-menu-item">
