@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -119,14 +120,21 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend class="catalog-title">Стоимость:</legend>
-            <label class="visually-hidden" for="pricecounter-field">Выберите минимальное и максимальное значение цены</label>
-            <input id="pricecounter-field" name="pricecounter" type="range" min="500" max="10000" step="100">
-            <p>
-              <label for="minprice-field">от</label>
-              <input class="price" id="minprice-field" name="price" type="text" placeholder="0" pattern="[0-9]{,5}">
-              <label for="maxprice-field">до</label>
-              <input class="price" id="maxprice-field" name="price" type="text" placeholder="5000" pattern="[0-9]{,5}">
-            </p>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min" tabindex="0" aria-label="Выберите минимальное значение"></div>
+                <div class="range-toggle range-toggle-max" tabindex="0" aria-label="Выберите максимальное значение"></div>
+              </div>
+              <label>
+                от<input class="min-price" name="price" type="text" placeholder="0" pattern="[0-9]{,5}">
+              </label>
+              <label>
+                до<input class="max-price" id="maxprice-field" name="price" type="text" placeholder="5000" pattern="[0-9]{,5}">
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <legend class="catalog-title">Цвет</legend>
@@ -194,7 +202,7 @@
         </ul>
         <ul class="catalog-list" aria-label="Каталог товаров">
           <li class="catalog-item">
-            <h3 class="catalog-item-title"> 
+            <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Любительская селфи палка</a>
             </h3>
             <span class="catalog-item-price">500 руб.</span>
@@ -206,39 +214,39 @@
             <span class="mark-new">New</span>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item-title"> 
+            <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Профессиональная селфи-палка</a>
             </h3>
-            <span class="catalog-item-price">500 руб.</span>
+            <span class="catalog-item-price">1500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            </p>          
-              <a class="into-the-backet link btn" href="#">В корзину</a>            
-              <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>            
+            </p>
+            <a class="into-the-backet link btn" href="#">В корзину</a>
+            <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>
             <span class="mark-new">New</span>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item-title"> 
+            <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Непотопляемая селфи-палка</a>
             </h3>
-            <span class="catalog-item-price">500 руб.</span>
+            <span class="catalog-item-price">2500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            </p>            
-              <a class="into-the-backet link btn" href="#">В корзину</a>            
-              <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>            
+            </p>
+            <a class="into-the-backet link btn" href="#">В корзину</a>
+            <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>
             <span class="mark-new">New</span>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item-title"> 
+            <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Селфи-палка &#8220;Следуй за мной&#8221;</a>
             </h3>
-            <span class="catalog-item-price">500 руб.</span>
+            <span class="catalog-item-price">4900 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &#8220;Следуй за мной&#8221;">
-            </p>            
-              <a class="into-the-backet link btn" href="#">В корзину</a>            
-              <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>            
+            </p>
+            <a class="into-the-backet link btn" href="#">В корзину</a>
+            <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>
             <span class="mark-new">New</span>
           </li>
         </ul>
