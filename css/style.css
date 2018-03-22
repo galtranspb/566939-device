@@ -181,21 +181,13 @@ img {
 /*****************************************************************/
 
 .main-header .container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 60px;
   padding-top: 35px;
   padding-bottom: 50px;
   /*  по странице каталога=55px~50px от низа главн. меню до бежево-белой границы*/
   background-image: linear-gradient(to bottom, #fff 59px, #f7e296 59px);
-}
-
-.header-container {
-  width: 1040px;
-  margin: auto;
-}
-
-.logo-container {
-  margin: 0;
-  margin-bottom: 10px;
-  50-24-17=9 ~ 10px 50-расст. от бело-бежевой границы до меню 24-половина высоты строки логотипа 17-верхняя высота поля поиска
 }
 
 .logo {
@@ -315,20 +307,23 @@ input[type="search"]:focus + .btn-search {
 }
 
 .user-menu-item:nth-child(1) {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 18px;
   padding-left: 28px;
 }
 
 .user-menu-item:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .user-menu-item:nth-child(3) {
+  margin-right: 0;
   padding-left: 23px;
 }
 
 .user-menu-item:nth-child(4) {
   margin-right: 0;
+  margin-left: 35px;
   padding-left: 25px;
 }
 
@@ -485,14 +480,14 @@ input[type="search"]:focus + .btn-search {
 }
 
 .section-title::before {
+  content: "";
+
   display: block;
   width: 100px;
   height: 7px;
   margin-bottom: 50px;
 
   background-color: #000;
-
-  content: "";
 }
 
 .promo .section-title::before {
@@ -513,10 +508,6 @@ input[type="search"]:focus + .btn-search {
 
 .promo .btn {
   margin-bottom: 50px;
-}
-
-.product-properties {
-  width: 460px;
 }
 
 .product-properties .value {
@@ -588,7 +579,7 @@ input[type="search"]:focus + .btn-search {
 
 .popular-product-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .popular-product-item {
@@ -597,23 +588,15 @@ input[type="search"]:focus + .btn-search {
   width: 160px;
 }
 
-.popular-product-title {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  font: inherit;
-}
-
-.popular-product-title:active {
-  opacity: 0.3;
-}
-
 .popular-product .link {
   letter-spacing: 0.01em;
   text-transform: inherit;
 }
 
-.popular-product-item::before {
+.popular-product-item::before,
+.popular-product-item::after {
+  content: "";
+
   position: absolute;
   bottom: 85px;
   left: 0px;
@@ -621,46 +604,47 @@ input[type="search"]:focus + .btn-search {
   width: 160px;
   height: 160px;
 
-  background: #f7e296 no-repeat center;
-
-  content: "";
+  background: no-repeat center;
+  cursor: pointer;
 }
 
-.popular-product-item:nth-child(1)::before {
+.popular-product-item::before {
+  background-color: #f7e296;
+}
+
+.popular-product-item:nth-child(1)::after {
   background-image: url("../img/popular-1.svg");
 }
 
-.popular-product-item:nth-child(2)::before {
+.popular-product-item:nth-child(2)::after {
   background-image: url("../img/popular-2.svg");
   background-position: bottom;
 }
 
-.popular-product-item:nth-child(3)::before {
+.popular-product-item:nth-child(3)::after {
   background-image: url("../img/popular-3.svg");
 }
 
-.popular-product-item:nth-child(4)::before {
+.popular-product-item:nth-child(4)::after {
   background-image: url("../img/popular-4.svg");
 }
 
-.popular-product-item:nth-child(5)::before {
+.popular-product-item:nth-child(5)::after {
   background-image: url("../img/popular-5.svg");
 }
 
-.popular-product-item:nth-child(6)::before {
+.popular-product-item:nth-child(6)::after {
   background-image: url("../img/popular-6.svg");
 }
 
-.popular-product-item:hover::before {
+.popular-product-item:hover::before,
+.popular-product-item:active::before {
   background-color: #f0c52e;
-  cursor: pointer;
 }
 
-/*
-.popular-product-item:active::before {
- Как изменить прозрачность свг фигуры, определённой бэкграундом через псевдо элемент?
+.popular-product-item:active::after {
+  opacity: 0.3;
 }
-*/
 
 /************************************************************************/
 
@@ -726,11 +710,11 @@ input[type="search"]:focus + .btn-search {
 }
 
 .services-item::after {
+  content: "";
+
   position: absolute;
 
   display: block;
-
-  content: "";
 }
 
 .services-item:nth-child(1)::after {
@@ -897,6 +881,15 @@ input[type="search"]:focus + .btn-search {
   color: inherit;
 }
 
+.footer-top,
+.footer-middle,
+.footer-bottom {
+  width: 1160px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -953,18 +946,18 @@ input[type="search"]:focus + .btn-search {
   font-size: 0;
 
   background-color: #7e7e7e;
-  background-image: url(../img/facebook.svg);
+  background-image: url("../img/facebook.svg");
   border-radius: 50%;
   opacity: 0.3;
   cursor: pointer;
 }
 
 .social-item:nth-child(2) a {
-  background-image: url(../img/instagram.svg);
+  background-image: url("../img/instagram.svg");
 }
 
 .social-item:nth-child(3) a {
-  background-image: url(../img/twitter.svg);
+  background-image: url("../img/twitter.svg");
 }
 
 .social-item a:hover {
@@ -976,13 +969,13 @@ input[type="search"]:focus + .btn-search {
 }
 
 .footer-bottom::before {
+  content: "";
+
   display: block;
   width: 80px;
   height: 7px;
 
   background-color: #ffc600;
-
-  content: "";
 }
 
 /************************************************************************************************************/
@@ -1152,6 +1145,8 @@ input[type="search"]:focus + .btn-search {
 }
 
 .breadcrumbs-item::after {
+  content: "";
+
   position: absolute;
   top: 10px;
   right: 0px;
@@ -1165,8 +1160,6 @@ input[type="search"]:focus + .btn-search {
   opacity: 0.3;
 
   transform: rotate(45deg);
-
-  content: "";
 }
 
 .breadcrumbs-item:nth-child(3)::after {
@@ -1236,13 +1229,14 @@ input[type="search"]:focus + .btn-search {
 }
 
 .filter-form .catalog-title::before {
+  content: "";
+
+
   display: block;
   width: 201px;
   margin-bottom: 15px;
 
   border-top: 2px solid #000;
-
-  content: "";
 }
 
 .range-controls {
@@ -1305,7 +1299,7 @@ input[type="search"]:focus + .btn-search {
   font: inherit;
   line-height: 24px;
   color: #000;
- 
+
   border: none;
 }
 
@@ -1322,6 +1316,8 @@ input[type="search"]:focus + .btn-search {
 }
 
 .color-filter-list label::before {
+  content: "";
+
   position: absolute;
   top: 0;
   left: -0px;
@@ -1331,8 +1327,6 @@ input[type="search"]:focus + .btn-search {
   height: 23px;
 
   background-image: url("../img/checkbox-off.svg");
-
-  content: "";
 }
 
 .color-filter-list input:checked + label::before {
@@ -1340,6 +1334,8 @@ input[type="search"]:focus + .btn-search {
 }
 
 .bluetooth-filter-list label::before {
+  content: "";
+
   position: absolute;
   top: 0;
   left: -0px;
@@ -1349,8 +1345,6 @@ input[type="search"]:focus + .btn-search {
   height: 25px;
 
   background-image: url("../img/radio-off.svg");
-
-  content: "";
 }
 
 .bluetooth-filter-list input:checked + label::before {
@@ -1540,6 +1534,8 @@ input[type="search"]:focus + .btn-search {
 }
 
 .mark-new::before {
+  content: "";
+
   position: absolute;
   top: -21px;
   right: 0;
@@ -1550,7 +1546,6 @@ input[type="search"]:focus + .btn-search {
   border: 3px solid #d9d9d9;
   border-radius: 50%;
   /*  opacity: 0.5;*/
-  content: "";
 }
 
 
