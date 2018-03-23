@@ -22,7 +22,7 @@
           <input id="search-field" name="search" type="search" placeholder="Поиск по сайту">
           <button class="btn-search" type="submit">Найти</button>
         </form>
-        <nav aria-label="Меню пользователя">
+        <nav class="user-menu" aria-label="Меню пользователя">
           <ul class="user-menu-list">
             <li class="user-menu-item">
               <a class="link-user-menu" href="#">Войти</a>
@@ -39,7 +39,7 @@
           </ul>
         </nav>
       </div>
-      <nav aria-label="Главное меню">
+      <nav class="main-menu" aria-label="Главное меню">
         <ul class="main-menu-list">
           <li class="main-menu-item" aria-haspopup="true">
             <a class="link" href="#">Каталог таваров</a>
@@ -91,7 +91,9 @@
   </header>
 
   <main class="index">
+   
     <h1 class="visually-hidden">Магазин Device</h1>
+    
     <section class="promo">
       <div class="container">
         <h2 class="visually-hidden">Наши лучшие товары</h2>
@@ -172,6 +174,7 @@
         </div>
       </div>
     </section>
+    
     <section class="popular-product">
       <div class="container">
         <h2 class="visually-hidden">Популярные продукты</h2>
@@ -197,7 +200,8 @@
         </ul>
       </div>
     </section>
-    <section class="services" id="services-section">
+    
+    <section class="services">
       <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-slider">
@@ -232,6 +236,7 @@
         </div>
       </div>
     </section>
+    
     <section class="our-partner">
       <div class="container">
         <h2 class="visually-hidden">Наши партнёры</h2>
@@ -259,25 +264,22 @@
         </ul>
       </div>
     </section>
+    
     <div class="container">
+     
       <section class="about-us">
         <h2 class="section-title">О нас</h2>
         <p class="content">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. </p>
         <p class="content">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями: </p>
         <ul class="companies-list">
-          <li class="companies-item">
-            Деловые линии
-          </li>
-          <li class="companies-item">
-            Автотрейдинг
-          </li>
-          <li class="companies-item">
-            ЖелДорЭкспидиция
-          </li>
+          <li class="companies-item">Деловые линии</li>
+          <li class="companies-item">Автотрейдинг</li>
+          <li class="companies-item">ЖелДорЭкспидиция</li>
         </ul>
         <a href="#" class="link btn">Подробнее о нас</a>
       </section>
-      <section class="contacts" id="contacts-section">
+      
+      <section class="contacts">
         <h2 class="section-title">Контакты</h2>
         <p class="content">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map-container">
@@ -285,7 +287,9 @@
         </div>
         <a href="#" class="link btn">Напишите нам</a>
       </section>
+      
     </div>
+    
     <!--    popup к секции services-->
     <section class="modal-write-us">
       <h2 class="visually-hidden">Свяжитесь с нами</h2>
@@ -306,6 +310,7 @@
       </form>
       <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>
     </section>
+    
     <!--    popup к секции contacts-->
     <section class="modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
@@ -314,6 +319,7 @@
       </div>
       <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>
     </section>
+    
   </main>
 
   <footer class="main-footer">
@@ -366,8 +372,8 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img src="img/logo-html.svg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
-        </a>
+        <img src="img/logo-html.svg" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+      </a>
     </div>
   </footer>
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +37,7 @@
           </ul>
         </nav>
       </div>
-      <nav aria-label="Главное меню">
+      <nav class="main-menu" aria-label="Главное меню">
         <ul class="main-menu-list">
           <li class="main-menu-item" aria-haspopup="true">
             <a class="link" href="#">Каталог таваров</a>
@@ -89,6 +89,7 @@
   </header>
 
   <main class="monopods">
+   
     <h1 class="section-title">Моноподы для селфи</h1>
     <ul class="breadcrumbs-list" aria-label="Навигационная цепочка">
       <li class="breadcrumbs-item">
@@ -100,8 +101,9 @@
       <li class="breadcrumbs-item breadcrumbs-current" aria-current="page">
         <span class="link-breadcrumbs">Моноподы для селфи</span>
       </li>
-    </ul>
-    <div class="monopods-container">
+    </ul>    
+    <div class="monopods-container">  
+        
       <section class="filter">
         <h2 class="catalog-title">Фильтр:</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
@@ -119,7 +121,7 @@
                 от<input class="min-price" name="price" type="text" placeholder="0" pattern="[0-9]{0,5}">
               </label>
               <label>
-                до<input class="max-price" id="maxprice-field" name="price" type="text" placeholder="5000" pattern="[0-9]{0,5}">
+                до<input class="max-price" name="price" type="text" placeholder="5000" pattern="[0-9]{0,5}">
               </label>
             </div>
           </fieldset>
@@ -164,28 +166,31 @@
           <button class="link btn" type="submit">Показать</button>
         </form>
       </section>
+            
       <section class="catalog">
         <h2 class="visually-hidden">Товары раздела Моноподы для селфи</h2>
-        <p class="catalog-title">Сортировка:</p>
-        <ul class="sort-type-list" aria-label="Выберите тип сортировки: по цене, по типу, по популярности">
-          <li class="sort-type-item">
-            <a class="sort-type by-pice" href="#">По цене</a>
-          </li>
-          <li class="sort-type-item">
-            <a class="sort-type by-type" href="#">По типу</a>
-          </li>
-          <li class="sort-type-item">
-            <a class="sort-type by-popularity" href="#">По популярности</a>
-          </li>
-        </ul>
-        <ul class="sort-list" aria-label="Сортировка товаров по выбранным фильтрам">
-          <li class="sort-item">
-            <a class="sort-icon ascending" href="#">По возрастанию</a>
-          </li>
-          <li class="sort-item">
-            <a class="sort-icon descending" href="#">По убыванию</a>
-          </li>
-        </ul>
+        <div class="sort-wrapper">
+          <p class="catalog-title">Сортировка:</p>
+          <ul class="sort-type-list" aria-label="Выберите тип сортировки: по цене, по типу, по популярности">
+            <li class="sort-type-item">
+              <a class="sort-type sort-current" href="#">По цене</a>
+            </li>
+            <li class="sort-type-item">
+              <a class="sort-type" href="#">По типу</a>
+            </li>
+            <li class="sort-type-item">
+              <a class="sort-type" href="#">По популярности</a>
+            </li>            
+          </ul>
+          <ul class="sort-list" aria-label="Сортировка товаров по выбранным фильтрам">
+            <li class="sort-item">
+              <a class="arrow arrow-up" href="#">По возрастанию</a>
+            </li>
+            <li class="sort-item">
+              <a class="arrow arrow-down sort-current" href="#">По убыванию</a>
+            </li>
+          </ul>
+        </div>
         <ul class="catalog-list" aria-label="Каталог товаров">
           <li class="catalog-item">
             <h3 class="catalog-item-title">
@@ -233,28 +238,30 @@
             </p>
             <a class="into-the-backet link btn" href="#">В корзину</a>
             <a href="#" class=" product-comparison link-user-menu">Добавить к сравнению</a>
-            <span class="mark-new">New</span>
+            <span class="mark-new mark-new-active">New</span>
           </li>
         </ul>
         <ul class="pagination-list" aria-label="Меню постраничной навигации">
           <li class="paginator-item">
-            <a class="link-paginator">Назад</a>
+            <a class="link">Назад</a>
           </li>
           <li class="paginator-item paginator-item-current" aria-current="page">
-            <a class="link-paginator">1</a>
+            <a class="link">1</a>
           </li>
           <li class="paginator-item">
-            <a class="link-paginator" href="#">2</a>
+            <a class="link" href="#">2</a>
           </li>
           <li class="paginator-item">
-            <a class="link-paginator" href="#">3</a>
+            <a class="link" href="#">3</a>
           </li>
           <li class="paginator-item">
-            <a class="link-paginator" href="#">Вперед</a>
+            <a class="link" href="#">Вперед</a>
           </li>
         </ul>
       </section>
+      
     </div>
+    
   </main>
 
   <footer class="main-footer">
