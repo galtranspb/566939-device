@@ -23,7 +23,7 @@
         <nav class="user-menu" aria-label="Меню пользователя">
           <ul class="user-menu-list">
             <li class="user-menu-item">
-              <a class="link-user-menu" href="#">Валентин Петухов</a>
+              <a class="link-user-menu" href="user001.html">Валентин Петухов</a>
             </li>
             <li class="user-menu-item">
               <a class="link-user-menu" href="#">Выйти</a>
@@ -40,7 +40,7 @@
       <nav class="main-menu" aria-label="Главное меню">
         <ul class="main-menu-list">
           <li class="main-menu-item" aria-haspopup="true">
-            <a class="link" href="#">Каталог таваров</a>
+            <a class="link" href="#">Каталог товаров</a>
             <ul class="sub-menu-list" aria-label="Разделы каталога">
               <li class="sub-menu-item">
                 <ul class="video-gadgets-list" aria-label="Видео гаджеты">
@@ -89,7 +89,7 @@
   </header>
 
   <main class="monopods">
-   
+
     <h1 class="section-title">Моноподы для селфи</h1>
     <ul class="breadcrumbs-list" aria-label="Навигационная цепочка">
       <li class="breadcrumbs-item">
@@ -101,9 +101,9 @@
       <li class="breadcrumbs-item breadcrumbs-current" aria-current="page">
         <span class="link-breadcrumbs">Моноподы для селфи</span>
       </li>
-    </ul>    
-    <div class="monopods-container">  
-        
+    </ul>
+    <div class="monopods-container">
+
       <section class="filter">
         <h2 class="catalog-title">Фильтр:</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
@@ -166,7 +166,7 @@
           <button class="link btn" type="submit">Показать</button>
         </form>
       </section>
-            
+
       <section class="catalog">
         <h2 class="visually-hidden">Товары раздела Моноподы для селфи</h2>
         <div class="sort-wrapper">
@@ -180,7 +180,7 @@
             </li>
             <li class="sort-type-item">
               <a class="sort-type" href="#">По популярности</a>
-            </li>            
+            </li>
           </ul>
           <ul class="sort-list" aria-label="Сортировка товаров по выбранным фильтрам">
             <li class="sort-item">
@@ -194,7 +194,7 @@
         <ul class="catalog-list" aria-label="Каталог товаров">
           <li class="catalog-item">
             <h3 class="catalog-item-title">
-              <a class="link" href="catalog-item.html">Любительская селфи палка</a>
+              <a class="link" href="catalog-item.html">Любительская селфи-палка</a>
             </h3>
             <span class="catalog-item-price">500 руб.</span>
             <p class="catalog-item-image">
@@ -208,7 +208,7 @@
             <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Профессиональная селфи-палка</a>
             </h3>
-            <span class="catalog-item-price">1500 руб.</span>
+            <span class="catalog-item-price">1 500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             </p>
@@ -220,7 +220,7 @@
             <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Непотопляемая селфи-палка</a>
             </h3>
-            <span class="catalog-item-price">2500 руб.</span>
+            <span class="catalog-item-price">2 500 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             </p>
@@ -232,7 +232,7 @@
             <h3 class="catalog-item-title">
               <a class="link" href="catalog-item.html">Селфи-палка &#8220;Следуй за мной&#8221;</a>
             </h3>
-            <span class="catalog-item-price">4900 руб.</span>
+            <span class="catalog-item-price">4 900 руб.</span>
             <p class="catalog-item-image">
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &#8220;Следуй за мной&#8221;">
             </p>
@@ -259,9 +259,9 @@
           </li>
         </ul>
       </section>
-      
+
     </div>
-    
+
   </main>
 
   <footer class="main-footer">
@@ -320,6 +320,25 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- PixLayout -->
+  <script src="_assets/jquery.js"></script>
+  <script src="_assets/pixlayout.js"></script>
+  <script>
+    if (true) {
+      $(function() {
+        $.pixlayout({
+          src: "_assets/device-catalog.jpg",
+          opacity: 0.4,
+          top: -2,
+          center: true,
+          clip: true,
+          show: true,
+        })
+      });
+    }
+  </script>
+  <!-- / PixLayout -->
 
 </body>
 
