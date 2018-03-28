@@ -382,9 +382,7 @@ header .main-menu-item:nth-child(4) {
   outline: 1px solid #000;
 }
 
-.main-menu-item:first-child:hover .sub-menu-list,
-.main-menu-item:first-child:active .sub-menu-list,
-.main-menu-item:first-child:focus-within .sub-menu-list {
+.main-menu-item:first-child:hover .sub-menu-list {
   display: flex;
 }
 
@@ -536,6 +534,7 @@ header .main-menu-item:nth-child(4) {
 }
 
 .promo .content {
+  width: 100%;
   margin-bottom: 43px;
 
   letter-spacing: 0.02em;
@@ -971,7 +970,7 @@ header .main-menu-item:nth-child(4) {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 
 .main-footer .logo {
@@ -1478,11 +1477,13 @@ fieldset:nth-child(3) .catalog-title {
 .filter-form .btn {
   width: 100%;
 
-  background-color: inherit;
+  background-image: linear-gradient(to bottom, #eee 16px, #f0c52e 16px, #f0c52e 24px, #eee 24px);
 }
 
 .filter-form .btn:hover {
   background-color: #f0c52e;
+  background-image: none;
+  opacity: 1;
 }
 
 /**********************************************************************************/
@@ -1694,7 +1695,7 @@ fieldset:nth-child(3) .catalog-title {
 
 .pagination-list {
   display: flex;
-/*  align-items: baseline;*/
+  /*  align-items: baseline;*/
   margin-bottom: 80px;
   padding: 0 5px;
 
