@@ -124,13 +124,11 @@ img {
   opacity: 1;
 }
 
-/*****************************************************************/
-
 .main-header .container {
   width: 1040px;
   margin: 0 auto;
   padding: 0 60px;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 51px;
   background-image: linear-gradient(to bottom, #fff 39px, #f7e296 39px);
 }
@@ -384,8 +382,6 @@ header .main-menu-item:nth-child(4) {
   line-height: 36px;
 }
 
-/*****************************************************************/
-
 .promo .container {
   width: 1120px;
   padding-bottom: 90px;
@@ -542,11 +538,9 @@ header .main-menu-item:nth-child(4) {
   background-size: contain;
 }
 
-/****************************************************************************/
-
 .popular-product {
-  margin-top: 202px;
-  padding-bottom: 75px;
+  margin-top: 204px;
+  padding-bottom: 73px;
 }
 
 .popular-product-list {
@@ -561,7 +555,6 @@ header .main-menu-item:nth-child(4) {
 }
 
 .popular-product .link {
-  line-height: 23px;
   letter-spacing: 0.02em;
   text-transform: none;
 }
@@ -628,10 +621,9 @@ header .main-menu-item:nth-child(4) {
   opacity: 0.3;
 }
 
-/************************************************************************/
-
 .services {
-  padding-bottom: 55px;
+  padding-bottom: 68px;
+  padding-left: 2px;
   background-image: linear-gradient(to bottom, #fff 100px, #e5e5e5 100px);
 }
 
@@ -649,8 +641,9 @@ header .main-menu-item:nth-child(4) {
   display: flex;
   flex-direction: column;
   width: 276px;
-  margin-right: 120px;
+  margin-right: 117px;
   padding: 80px 0;
+  padding-bottom: 71px;
   border-right: 7px solid #000;
 }
 
@@ -660,7 +653,7 @@ header .main-menu-item:nth-child(4) {
 }
 
 .services-active p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .services-active .btn {
@@ -713,7 +706,8 @@ header .main-menu-item:nth-child(4) {
 }
 
 .services .section-title {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
 }
 
 .services .section-title::before {
@@ -721,11 +715,9 @@ header .main-menu-item:nth-child(4) {
   background-color: #fff;
 }
 
-/*******************************************************************************/
-
 .our-partner {
-  padding: 100px 0;
-  padding-bottom: 91px;
+  padding-top: 95px;
+  padding-bottom: 93px;
 }
 
 .our-partner-list {
@@ -760,13 +752,9 @@ header .main-menu-item:nth-child(4) {
   background-image: url("../img/logo-partner-4-hover.png");
 }
 
-/*********************************************************************************************/
-
-.index .container {
+.index > .container {
   display: flex;
 }
-
-/*************************************************************************************************/
 
 .about-us {
   width: 560px;
@@ -828,9 +816,8 @@ header .main-menu-item:nth-child(4) {
 .about-us .btn,
 .contacts .btn {
   width: 260px;
+  margin-left: 2px;
 }
-
-/********************************************************************************/
 
 .contacts {
   width: 560px;
@@ -843,8 +830,6 @@ header .main-menu-item:nth-child(4) {
 .contacts .map-container {
   margin-bottom: 60px;
 }
-
-/**************************************************************/
 
 .main-footer {
   margin: 0 auto;
@@ -864,7 +849,6 @@ header .main-menu-item:nth-child(4) {
 
 .main-footer .content {
   color: inherit;
-
   line-height: 30px;
   letter-spacing: 0.03em;
 }
@@ -880,7 +864,7 @@ header .main-menu-item:nth-child(4) {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .main-footer .logo {
@@ -992,8 +976,6 @@ header .main-menu-item:nth-child(4) {
   display: flex;
 }
 
-/*********************************************************************************************/
-
 .modal-write-us {
   position: relative;
   display: none;
@@ -1100,16 +1082,12 @@ header .main-menu-item:nth-child(4) {
   opacity: 0.3;
 }
 
-/******************************************************************************************/
-
 .modal-map {
   position: relative;
   display: none;
   width: 960px;
   margin: 0 auto;
 }
-
-/***********************Страница моноподов*********************************************/
 
 .monopods {
   padding-top: 37px;
@@ -1118,7 +1096,8 @@ header .main-menu-item:nth-child(4) {
 }
 
 .main-header .container-inner {
-  padding-bottom: 46px;
+  padding-top: 15px;
+  padding-bottom: 47px;
 }
 
 .monopods-container {
@@ -1176,8 +1155,6 @@ header .main-menu-item:nth-child(4) {
   color: #000;
   opacity: 0.3;
 }
-
-/*******************************************************************************/
 
 .filter {
   display: flex;
@@ -1364,8 +1341,6 @@ fieldset:nth-child(3) .catalog-title {
   background-image: none;
   opacity: 1;
 }
-
-/**********************************************************************************/
 
 .catalog {
   display: flex;
@@ -1624,4 +1599,8 @@ fieldset:nth-child(3) .catalog-title {
 .paginator-item:first-child .link:active,
 .paginator-item:last-child .link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+ .monopods-footer {
+  padding-top: 60px;
 }
