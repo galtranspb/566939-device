@@ -1181,16 +1181,10 @@ header .main-menu-item:nth-child(4) {
 
 .filter {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   flex-grow: 1;
   background-image: linear-gradient(to bottom, #dbdbdb 70px, #eee 70px);
-}
-
-.filter .wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 330px;
-  margin-left: auto;
-  padding-left: 20px;
 }
 
 .catalog-title {
@@ -1207,15 +1201,16 @@ header .main-menu-item:nth-child(4) {
 
 .filter h2 {
   margin-top: 23px;
+  margin-right: 178px;
   margin-bottom: 92px;
-  margin-left: 59px;
 }
 
 .filter-form {
   display: flex;
   flex-direction: column;
   width: 200px;
-  margin-left: 59px;
+  margin-right: 70px;
+  margin-left: 80px;
 }
 
 .filter-form label {
@@ -1374,15 +1369,10 @@ fieldset:nth-child(3) .catalog-title {
 
 .catalog {
   display: flex;
-  flex-grow: 1;
-  background-image: linear-gradient(to bottom, #ebebeb 70px, #fff 70px);
-}
-
-.catalog .wrapper {
-  display: flex;
   flex-direction: column;
+  flex-grow: 1;
   width: 850px;
-  margin-right: auto;
+  background-image: linear-gradient(to bottom, #ebebeb 70px, #fff 70px);
 }
 
 .sort-wrapper {
