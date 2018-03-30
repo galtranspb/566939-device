@@ -206,7 +206,7 @@ input[type="search"]:focus {
   width: 16px;
   height: 16px;
   background: url("../img/search.svg");
-} 
+}
 
 .btn-search {
   padding: 15px 20px;
@@ -1123,7 +1123,6 @@ header .main-menu-item:nth-child(4) {
 
 .monopods-container {
   display: flex;
-  justify-content: center;
 }
 
 .monopods .section-title {
@@ -1182,10 +1181,16 @@ header .main-menu-item:nth-child(4) {
 
 .filter {
   display: flex;
+  flex-grow: 1;
+  background-image: linear-gradient(to bottom, #dbdbdb 70px, #eee 70px);
+}
+
+.filter .wrapper {
+  display: flex;
   flex-direction: column;
-  flex-grow: 2;
-  /*  background-image: linear-gradient(to bottom, #dbdbdb 70px, #eee 70px);*/
-  background-color: #eee;
+  width: 330px;
+  margin-left: auto;
+  padding-left: 20px;
 }
 
 .catalog-title {
@@ -1201,22 +1206,16 @@ header .main-menu-item:nth-child(4) {
 }
 
 .filter h2 {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 68px;
-  padding-top: 23px;
-  padding-right: 178px;
-  padding-bottom: 24px;
-  background-color: #dbdbdb;
-
+  margin-top: 23px;
+  margin-bottom: 92px;
+  margin-left: 59px;
 }
 
 .filter-form {
   display: flex;
   flex-direction: column;
   width: 200px;
-  margin-right: 68px;
-  margin-left: auto;
+  margin-left: 59px;
 }
 
 .filter-form label {
@@ -1234,6 +1233,10 @@ header .main-menu-item:nth-child(4) {
   margin-bottom: 32px;
   padding: 0;
   border: none;
+}
+
+.filter-form fieldset:nth-child(2) {
+  margin-bottom: 31px;
 }
 
 .filter-form .catalog-title {
@@ -1370,26 +1373,28 @@ fieldset:nth-child(3) .catalog-title {
 /**********************************************************************************/
 
 .catalog {
+  display: flex;
   flex-grow: 1;
+  background-image: linear-gradient(to bottom, #ebebeb 70px, #fff 70px);
+}
+
+.catalog .wrapper {
   display: flex;
   flex-direction: column;
-  /*  background-image: linear-gradient(to bottom, #ebebeb 70px, #fff 70px);*/
+  width: 850px;
+  margin-right: auto;
 }
 
 .sort-wrapper {
   display: flex;
-  align-items: center;
-  margin-bottom: 67px;
-  padding-top: 17px;
-  padding-bottom: 18px;
-  background-color: #ebebeb;
+  align-items: baseline;
+  margin-bottom: 84px;
 }
 
 .catalog .catalog-title {
-  margin: 0;
-  margin-right: 48px;
-  margin-left: 72px;
-
+  margin-top: 23px;
+  margin-right: 50px;
+  margin-left: 70px;
 }
 
 .sort-type-list {
@@ -1402,13 +1407,13 @@ fieldset:nth-child(3) .catalog-title {
 }
 
 .sort-type-item:nth-child(2) {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .sort-list {
   display: flex;
   align-items: center;
-  margin-left: 194px;
+  margin-left: 195px;
 }
 
 .sort-item {
@@ -1448,8 +1453,7 @@ fieldset:nth-child(3) .catalog-title {
   display: flex;
   flex-wrap: wrap;
   width: 760px;
-  margin-left: 72px;
-
+  margin-left: 70px;
 }
 
 .catalog-item {
@@ -1468,6 +1472,10 @@ fieldset:nth-child(3) .catalog-title {
   margin-right: 0;
 }
 
+.catalog-item:nth-child(n+3) {
+  margin-bottom: 6px;
+}
+
 .catalog-item:hover {
   cursor: pointer;
 }
@@ -1480,8 +1488,8 @@ fieldset:nth-child(3) .catalog-title {
   order: 2;
   width: 260px;
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  margin-top: 32px;
+  margin-bottom: 30px;
   line-height: 23px;
 }
 
@@ -1538,7 +1546,7 @@ fieldset:nth-child(3) .catalog-title {
 
 .mark-new {
   position: absolute;
-  top: 53px;
+  top: 49px;
   right: 37px;
   display: none;
   font-weight: 800;
@@ -1569,35 +1577,34 @@ fieldset:nth-child(3) .catalog-title {
 
 .pagination-list {
   display: flex;
+  align-items: center;
   width: 750px;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   margin-left: 72px;
   padding: 0 5px;
+  padding-top: 5px;
   background-color: #ebebeb;
 }
 
-.paginator-item {
-  margin: 0 auto;
-}
-
 .paginator-item:first-child {
-  margin-left: 0;
+  margin-left: 0px;
 }
 
 .paginator-item:nth-child(2) {
-  margin-right: 0;
+  margin-left: 202px;
 }
 
 .paginator-item:nth-child(3) {
-  margin: 0;
+  margin-left: 10px;
 }
 
 .paginator-item:nth-child(4) {
-  margin-left: 0;
+  margin-left: 7px;
 }
 
 .paginator-item:last-child {
   margin-right: 0;
+  margin-left: auto;
 }
 
 .paginator-item .link {
