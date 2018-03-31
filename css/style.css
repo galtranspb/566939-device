@@ -632,9 +632,9 @@ header .main-menu-item:nth-child(4) {
   display: flex;
 }
 
-#services-slide1:checked ~ .services-list .services-item:nth-child(1),
-#services-slide2:checked ~ .services-list .services-item:nth-child(2),
-#services-slide3:checked ~ .services-list .services-item:nth-child(3) {
+.services-slide1:checked ~ .services-list .services-item:nth-child(1),
+.services-slide2:checked ~ .services-list .services-item:nth-child(2),
+.services-slide3:checked ~ .services-list .services-item:nth-child(3) {
   display: block;
 }
 
