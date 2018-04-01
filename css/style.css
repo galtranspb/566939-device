@@ -349,7 +349,7 @@ header .main-menu-item:nth-child(4) {
   left: -60px;
   z-index: 2;
   display: none;
-  width: 1100px;  
+  width: 1100px;
   padding-top: 20px;
   padding-bottom: 32px;
   padding-left: 60px;
@@ -978,11 +978,65 @@ header .main-menu-item:nth-child(4) {
   display: flex;
 }
 
-.modal-write-us {
-  position: relative;
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }  
+    70% {
+    transform: translateY(-47%);  
+  }  
+    90% {
+    transform: translateY(-53%);   
+  }  
+    100% {
+    transform: translateY(-50%);    
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0, -50%);
+  }  
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-10px, -50%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(10px, -50%);
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
   display: none;
+  margin-left: -480px;
+  color: #000;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.modal-show {
+  display: block;
+  
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-write-us {
   width: 760px;
-  margin: 0 auto;
   padding: 90px 100px;
 }
 
@@ -1065,6 +1119,7 @@ header .main-menu-item:nth-child(4) {
   position: absolute;
   top: 35px;
   right: 25px;
+  z-index: 10;
   width: 55px;
   height: 55px;
   font-size: 0;
@@ -1085,10 +1140,21 @@ header .main-menu-item:nth-child(4) {
 }
 
 .modal-map {
-  position: relative;
-  display: none;
   width: 960px;
-  margin: 0 auto;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 3;  
+  border: none;
 }
 
 .monopods {
