@@ -1114,6 +1114,12 @@ header .main-menu-item:nth-child(4) {
   opacity: 1;
 }
 
+.contact-form input[type="email"]:invalid {
+  background-color: #edb5b5;
+  outline: 4px solid #edb5b5;
+  opacity: 0.5;
+}
+
 .contact-form textarea {
   min-height: 155px;
 }
