@@ -95,9 +95,9 @@
       <div class="container">
         <h2 class="visually-hidden">Наши лучшие товары</h2>
         <div class="promo-slider">
-          <input class="visually-hidden promo-slide1" id="promo-slide1" name="promo-slides" type="radio" checked>
-          <input class="visually-hidden promo-slide2" id="promo-slide2" name="promo-slides" type="radio">
-          <input class="visually-hidden promo-slide3" id="promo-slide3" name="promo-slides" type="radio">
+          <input class="visually-hidden" id="promo-slide1" name="promo-slides" type="radio" checked>
+          <input class="visually-hidden" id="promo-slide2" name="promo-slides" type="radio">
+          <input class="visually-hidden" id="promo-slide3" name="promo-slides" type="radio">
           <ol class="promo-list">
             <li class="promo-item">
               <div class="promo-column">
@@ -200,9 +200,9 @@
       <div class="container">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-slider">
-          <input class="visually-hidden services-slide1" id="services-slide1" name="services-slides" type="radio" checked>
-          <input class="visually-hidden services-slide2" id="services-slide2" name="services-slides" type="radio">
-          <input class="visually-hidden services-slide3" id="services-slide3" name="services-slides" type="radio">
+          <input class="visually-hidden" id="services-slide1" name="services-slides" type="radio" checked>
+          <input class="visually-hidden" id="services-slide2" name="services-slides" type="radio">
+          <input class="visually-hidden" id="services-slide3" name="services-slides" type="radio">
           <div class="services-active">
             <p>
               <label class="link btn" for="services-slide1" tabindex="0">Доставка</label>
@@ -236,22 +236,22 @@
         <h2 class="visually-hidden">Наши партнёры</h2>
         <ul class="our-partner-list">
           <li class="our-partner-item">
-            <a href="#">
+            <a href="#" class="link-our-partner">
               <img src="img/logo-partner-1.png" width="260" height="100" alt="Компания dji">
             </a>
           </li>
           <li class="our-partner-item">
-            <a href="#">
+            <a href="#" class="link-our-partner">
               <img src="img/logo-partner-2.png" width="260" height="100" alt="Компания SP-Gadgets">
             </a>
           </li>
           <li class="our-partner-item">
-            <a href="#">
+            <a href="#" class="link-our-partner">
               <img src="img/logo-partner-3.png" width="260" height="100" alt="Компания GoPro">
             </a>
           </li>
           <li class="our-partner-item">
-            <a href="#">
+            <a href="#" class="link-our-partner">
               <img src="img/logo-partner-4.png" width="260" height="100" alt="Компания Vive">
             </a>
           </li>
@@ -303,7 +303,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112896739067!2d37.52745077391227!3d55.68702493255083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522529101238" width="960" height="559"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112896739067!2d37.52745077391227!3d55.68702493255083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522529101238" width="960" height="559"></iframe>
         <img src="img/map-big.jpg" width="960" height="559" alt="Адрес нашей компании: Москва, улица Строителей, 15">
       </div>
       <button class="modal-close" type="button" tabindex="0">Закрыть окно</button>
@@ -360,11 +360,13 @@
         </li>
       </ul>
       <a class="logo-academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+        <svg width="27" height="35">
+          <path fill="#ffc600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+        </svg>
       </a>
     </div>
   </footer>
-  
+
   <script src="js/main.js"></script>
 
 </body>
