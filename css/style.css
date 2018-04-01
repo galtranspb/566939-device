@@ -117,11 +117,16 @@ img {
   opacity: 1;
 }
 
+.btn:focus {
+  outline: 2px solid lightblue;
+}
+
 .btn:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #f0c52e;
   background-image: none;
   opacity: 1;
+  outline: none;
 }
 
 .main-header .container {
@@ -1345,7 +1350,7 @@ fieldset:nth-child(3) .catalog-title::before {
   height: 2px;
   background-color: #91c92f;
 }
-
+        
 .range-toggle {
   position: absolute;
   top: -10px;
@@ -1390,7 +1395,7 @@ fieldset:nth-child(3) .catalog-title::before {
 }
 
 .range-filter input:focus {
-  outline: 1px solid #000;
+  outline: 2px solid #000;
 }
 
 .color-filter-list label,
@@ -1422,6 +1427,11 @@ fieldset:nth-child(3) .catalog-title::before {
 .color-filter-list label:disabled,
 .bluetooth-filter-list label:disabled {
   opacity: 0.25;
+}
+
+input[name^="color-filter-"]:focus + label,
+input[name="got-a-bluetooth"]:focus + label {
+  outline: 2px solid lightblue;
 }
 
 .color-filter-list input:checked + label::before {
@@ -1634,7 +1644,6 @@ fieldset:nth-child(3) .catalog-title::before {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #d9d9d9;
-  /*  opacity: 0.2;*/
 }
 
 .mark-new::before {
@@ -1646,7 +1655,6 @@ fieldset:nth-child(3) .catalog-title::before {
   height: 57px;
   border: 3px solid #d9d9d9;
   border-radius: 50%;
-  /*  opacity: 0.5;*/
 }
 
 .mark-new-active {

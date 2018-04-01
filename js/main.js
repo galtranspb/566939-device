@@ -1,6 +1,6 @@
 var feedback = document.querySelector(".feedback-js");
 var feedbackPopup = document.querySelector(".modal-write-us");
-var feedbackClose = document.querySelector(".modal-write-us .modal-close");
+var feedbackClose = feedbackPopup.querySelector(".modal-close");
 var fullname = document.querySelector("[name=fullname]");
 var form = feedbackPopup.querySelector("form");
 var email = feedbackPopup.querySelector("[name=email]");
