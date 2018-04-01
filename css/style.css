@@ -514,7 +514,7 @@ header .main-menu-item:nth-child(4) {
 
 .promo-active {
   position: absolute;
-  top: 319px;
+  top: 314px;
   right: 83px;
 }
 
@@ -548,8 +548,8 @@ header .main-menu-item:nth-child(4) {
 }
 
 .popular-product {
-  margin-top: 206px;
-  padding-bottom: 73px;
+  margin-top: 209px;
+  padding-bottom: 81px;
 }
 
 .popular-product-list {
@@ -561,12 +561,20 @@ header .main-menu-item:nth-child(4) {
 .popular-product-item {
   position: relative;
   width: 160px;
+  line-height: 24px;  
+}
+
+.popular-product-item:nth-child(2) span {
+  position: absolute;
+  white-space: nowrap;
+  bottom: 0;
+  left: 0;
 }
 
 .popular-product-item::before {
   content: "";
   position: absolute;
-  bottom: 90px;
+  bottom: 81px;
   left: 0px;
   width: 160px;
   height: 160px;
@@ -597,36 +605,36 @@ header .main-menu-item:nth-child(4) {
 }
 
 .popular-product-item:nth-child(1) .link::after {
-  bottom: 91px;
+  bottom: 82px;
   background-image: url("../img/popular-1.svg");
 }
 
 .popular-product-item:nth-child(2) .link::after {
-  bottom: 71px;
+  bottom: 62px;
   left: 2px;
   background-image: url("../img/popular-2.svg");
 }
 
 .popular-product-item:nth-child(3) .link::after {
-  bottom: 89px;
+  bottom: 80px;
   left: 5px;
   background-image: url("../img/popular-3.svg");
 }
 
 .popular-product-item:nth-child(4) .link::after {
-  bottom: 88px;
+  bottom: 79px;
   left: 2px;
   background-image: url("../img/popular-4.svg");
 }
 
 .popular-product-item:nth-child(5) .link::after {
-  bottom: 89px;
+  bottom: 80px;
   left: 4px;
   background-image: url("../img/popular-5.svg");
 }
 
 .popular-product-item:nth-child(6) .link::after {
-  bottom: 87px;
+  bottom: 78px;
   left: 1px;
   background-image: url("../img/popular-6.svg");
 }
