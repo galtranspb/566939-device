@@ -1437,6 +1437,18 @@ fieldset:nth-child(3) .catalog-title::before {
   padding-left: 40px;
 }
 
+.bluetooth-filter-list label {
+  opacity: 0.25;
+}
+
+.bluetooth-filter-list label:hover {
+  opacity: 0.6;
+}
+
+.bluetooth-filter-list label:active {
+  opacity: 1;
+}
+
 .color-filter-list label::before {
   content: "";
   position: absolute;
@@ -1457,9 +1469,8 @@ fieldset:nth-child(3) .catalog-title::before {
   opacity: 1;
 }
 
-.color-filter-list label:disabled,
-.bluetooth-filter-list label:disabled {
-  opacity: 0.25;
+input[name="got-a-bluetooth"]:checked + label {
+  opacity: 1;
 }
 
 input[name^="color-filter-"]:focus + label,
@@ -1479,10 +1490,12 @@ input[name="got-a-bluetooth"]:focus + label {
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
+  opacity: 0.25;
 }
 
 .bluetooth-filter-list input:checked + label::before {
   background-image: url("../img/radio-on.svg");
+  opacity: 1;
 }
 
 .filter-form .btn {
