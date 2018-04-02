@@ -54,27 +54,75 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
-//************************************КАРТА*****************************************************
+//************************************окно карты*****************************************************
 
-//var mapLink = document.querySelector(".contacts-button-map");
-//var mapPopup = document.querySelector(".modal-map");
-//var mapClose = mapPopup.querySelector(".modal-close");
-//
-//mapLink.addEventListener("click", function (event) {
-//  event.preventDefault();
-//  mapPopup.classList.add("modal-show");
-//});
-//
-//mapClose.addEventListener("click", function (event) {
-//  event.preventDefault();
-//  mapPopup.classList.remove("modal-show");
-//});
-//
-//window.addEventListener("keydown", function (event) {
-//  event.preventDefault();
-//  if (event.keyCode === 27) {
-//    if (mapPopup.classList.contains("modal-show")) {
-//      mapPopup.classList.remove("modal-show");
-//    }
-//  }
-//});
+var mapLink = document.querySelector(".contacts-button-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (event) {
+  event.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (event) {  
+  if (event.keyCode === 27) {
+    event.preventDefault();
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+//**************************карта через гугл апи***********************
+
+function initMap() {
+  var element = document.querySelector(".map");
+  var options = {
+    zoom: 16,
+    center: {
+      lat: 55.687295,
+      lng: 37.530025
+    }
+  };
+
+  var myMap = new google.maps.Map(element, options);
+
+  var markers = [{
+    coordinates: {
+      lat: 55.687295,
+      lng: 37.530025
+    },
+    image: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+    info: "<h3>Улица Строителей 15</h3>"
+  }]
+
+  for(var i = 0; i < markers.length; i++)
+    {
+        addMarker(markers[i]);
+    }
+
+  function addMarker(properties) {
+    var marker = new google.maps.Marker({
+      position: properties.coordinates,
+      map: myMap
+    });
+
+    if (properties.image) {
+      marker.setIcon(properties.image);
+    }
+    if (properties.info) {
+      var InfoWindow = new google.maps.InfoWindow({
+        content: properties.info
+      });
+      marker.addListener("click", function () {
+        InfoWindow.open(myMap, marker);
+      });
+    }
+  }
+}

@@ -1191,6 +1191,10 @@ header .main-menu-item:nth-child(4) {
   width: 960px;
 }
 
+.map {
+  height: 559px;
+}
+
 .modal-map img {
   position: absolute;
   top: 0;
@@ -1199,7 +1203,7 @@ header .main-menu-item:nth-child(4) {
   margin: 0;
 }
 
-.modal-map iframe {
+.modal-map .map {
   position: relative;
   z-index: 3;
   border: none;
