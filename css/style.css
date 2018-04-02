@@ -73,6 +73,7 @@ img {
 }
 
 .link {
+  display: inline-block;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -80,6 +81,7 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  vertical-align: middle;
   color: #000;
   cursor: pointer;
 }
@@ -555,20 +557,12 @@ header .main-menu-item:nth-child(4) {
 .popular-product-list {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
 }
 
 .popular-product-item {
   position: relative;
   width: 160px;
   line-height: 24px;
-}
-
-.popular-product-item:nth-child(2) span {
-  position: absolute;
-  white-space: nowrap;
-  bottom: 0;
-  left: 0;
 }
 
 .popular-product-item::before {
@@ -587,9 +581,13 @@ header .main-menu-item:nth-child(4) {
   background-color: #f0c52e;
 }
 
-.popular-product .link {
+.popular-product-item .link {
   letter-spacing: 0.02em;
   text-transform: none;
+}
+
+.popular-product-item:nth-child(2) .link {
+  width: 129px;
 }
 
 .popular-product-item .link::after {
@@ -1207,7 +1205,7 @@ header .main-menu-item:nth-child(4) {
 }
 
 .monopods {
-  padding-top: 37px;
+  padding-top: 39px;
   color: #000;
   background-color: #fff;
 }
@@ -1215,6 +1213,10 @@ header .main-menu-item:nth-child(4) {
 .main-header .container-inner {
   padding-top: 15px;
   padding-bottom: 47px;
+}
+
+.container-inner .header-wrapper {
+  margin-bottom: 22px;
 }
 
 .monopods-container {
@@ -1607,8 +1609,13 @@ input[name="got-a-bluetooth"]:focus + label {
 }
 
 .catalog-item-title .link {
-  text-transform: inherit;
   letter-spacing: 0.02em;
+  text-transform: inherit;
+  vertical-align: top;
+}
+
+.catalog-item:nth-child(2) .link {
+  width: 239px;
 }
 
 .catalog-item-price {
@@ -1718,7 +1725,6 @@ input[name="got-a-bluetooth"]:focus + label {
 }
 
 .paginator-item .link {
-  display: inline-block;
   padding: 20px 10px;
   padding-top: 25px;
   font-size: 16px;
