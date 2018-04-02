@@ -283,19 +283,19 @@ header .user-menu-item:nth-child(3) {
 }
 
 .user-menu-item:nth-child(1) .link-user-menu::before {
-  top: -1px;
+  top: 0;
   left: -29px;
   background: url("../img/user.svg") no-repeat center;
 }
 
 .user-menu-item:nth-child(3) .link-user-menu::before {
-  top: 0px;
+  top: 1px;
   left: -27px;
   background: url("../img/compare.svg") no-repeat center;
 }
 
 .user-menu-item:nth-child(4) .link-user-menu::before {
-  top: -1px;
+  top: 0;
   left: -26px;
   background: url("../img/cart.svg") no-repeat center;
 }
@@ -561,7 +561,7 @@ header .main-menu-item:nth-child(4) {
 .popular-product-item {
   position: relative;
   width: 160px;
-  line-height: 24px;  
+  line-height: 24px;
 }
 
 .popular-product-item:nth-child(2) span {
@@ -906,23 +906,42 @@ header .main-menu-item:nth-child(4) {
   padding-top: 3px;
 }
 
-.main-footer .user-menu-item:nth-child(1) {
+.footer-user-menu-item {
   margin-right: 0;
+  margin-left: 40px;
+  padding-left: 21px;
 }
 
-.main-footer .user-menu-item:nth-child(2) {
+.footer-user-menu-item:nth-child(1) {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 27px;
+}
+
+.footer-user-menu-item:nth-child(2) {
   margin-left: 20px;
+  padding-left: 0;
 }
 
-.main-footer .user-menu-item:nth-child(1) .link-user-menu::before {
+.footer-user-menu-item:nth-child(2) a {
+  opacity: 0.3;
+}
+
+.footer-user-menu-item:nth-child(1) .link-user-menu::before {
+  top: 1px;
+  left: -32px;
   background: url("../img/user-footer.svg") no-repeat center;
 }
 
-.main-footer .user-menu-item:nth-child(3) .link-user-menu::before {
+.footer-user-menu-item:nth-child(3) .link-user-menu::before {
+  top: 2px;
+  left: -25px;
   background: url("../img/compare-footer.svg") no-repeat center;
 }
 
-.main-footer .user-menu-item:nth-child(4) .link-user-menu::before {
+.footer-user-menu-item:nth-child(4) .link-user-menu::before {
+  top: 1px;
+  left: -24px;
   background: url("../img/cart-footer.svg") no-repeat center;
 }
 
@@ -1052,7 +1071,6 @@ header .main-menu-item:nth-child(4) {
 
 .modal-show {
   display: block;
-
   animation: bounce 0.6s;
 }
 
@@ -1358,7 +1376,7 @@ fieldset:nth-child(3) .catalog-title::before {
   height: 2px;
   background-color: #91c92f;
 }
-        
+
 .range-toggle {
   position: absolute;
   top: -10px;
