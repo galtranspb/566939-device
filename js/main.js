@@ -54,8 +54,6 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
-//************************************окно карты*****************************************************
-
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
@@ -70,7 +68,7 @@ mapClose.addEventListener("click", function (event) {
   mapPopup.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function (event) {  
+window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     event.preventDefault();
     if (mapPopup.classList.contains("modal-show")) {
@@ -78,8 +76,6 @@ window.addEventListener("keydown", function (event) {
     }
   }
 });
-
-//**************************карта через гугл апи***********************
 
 function initMap() {
   var element = document.querySelector(".map");
@@ -99,13 +95,12 @@ function initMap() {
       lng: 37.530025
     },
     image: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-    info: "<h3>Улица Строителей 15</h3>"
+    info: "<h3>Наш адрес: Москва, улица Строителей 15</h3>"
   }]
 
-  for(var i = 0; i < markers.length; i++)
-    {
-        addMarker(markers[i]);
-    }
+  for (var i = 0; i < markers.length; i++) {
+    addMarker(markers[i]);
+  }
 
   function addMarker(properties) {
     var marker = new google.maps.Marker({
