@@ -1437,18 +1437,6 @@ fieldset:nth-child(3) .catalog-title::before {
   padding-left: 40px;
 }
 
-.bluetooth-filter-list label {
-  opacity: 0.25;
-}
-
-.bluetooth-filter-list label:hover {
-  opacity: 0.6;
-}
-
-.bluetooth-filter-list label:active {
-  opacity: 1;
-}
-
 .color-filter-list label::before {
   content: "";
   position: absolute;
@@ -1459,26 +1447,7 @@ fieldset:nth-child(3) .catalog-title::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
-.color-filter-list label:hover::before,
-.bluetooth-filter-list label:hover::before {
-  opacity: 0.6;
-}
-
-.color-filter-list label:active::before,
-.bluetooth-filter-list label:active::before {
-  opacity: 1;
-}
-
-input[name="got-a-bluetooth"]:checked + label {
-  opacity: 1;
-}
-
-input[name^="color-filter-"]:focus + label,
-input[name="got-a-bluetooth"]:focus + label {
-  outline: 2px solid lightblue;
-}
-
-.color-filter-list input:checked + label::before {
+input[name^="color-filter-"]:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -1490,12 +1459,30 @@ input[name="got-a-bluetooth"]:focus + label {
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
-  opacity: 0.25;
 }
 
-.bluetooth-filter-list input:checked + label::before {
+input[name="got-a-bluetooth"]:checked + label::before {
   background-image: url("../img/radio-on.svg");
+}
+
+input[name^="color-filter-"]:hover + label,
+input[name="got-a-bluetooth"]:hover + label {
+  opacity: 0.6;
+}
+
+input[name^="color-filter-"]:active + label,
+input[name="got-a-bluetooth"]:active + label {
   opacity: 1;
+}
+
+input[name^="color-filter-"]:focus + label,
+input[name="got-a-bluetooth"]:focus + label {
+  outline: 2px solid lightblue;
+}
+
+input[name^="color-filter-"]:disabled + label,
+input[name="got-a-bluetooth"]:disabled + label {
+  opacity: 0.25;
 }
 
 .filter-form .btn {
