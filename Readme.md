@@ -1,1 +1,1 @@
-https://anatolysokolov.github.io/566939-device/
+https://galtranspb.github.io/566939-device/
